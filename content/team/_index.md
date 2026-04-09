@@ -15,7 +15,8 @@ description: "認識一宇橙AI 團隊的專業成員"
 
 ## 核心團隊
 
-<div class="feature-grid">
+<div class="scroll-container">
+<div class="scroll-grid">
   <div class="team-card">
     <div class="team-avatar" style="background: linear-gradient(135deg, #1e40af, #3b82f6);">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -94,6 +95,7 @@ description: "認識一宇橙AI 團隊的專業成員"
       <span class="badge badge-blue">GenAI</span>
     </div>
   </div>
+</div>
 </div>
 
 <hr class="styled-divider">

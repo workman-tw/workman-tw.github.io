@@ -1,1 +1,13 @@
 <link rel="stylesheet" href="/css/custom.css">
+<script defer>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.scroll-grid').forEach(function(grid) {
+    grid.addEventListener('scroll', function() {
+      var container = grid.parentElement;
+      if (!container || !container.classList.contains('scroll-container')) return;
+      var atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 10;
+      container.classList.toggle('scrolled-end', atEnd);
+    });
+  });
+});
+</script>

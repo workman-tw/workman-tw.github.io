@@ -16,7 +16,8 @@ type: "page"
 
 ## 服務內容
 
-<div class="feature-grid">
+<div class="scroll-container">
+<div class="scroll-grid">
   <div class="service-card">
     <div class="icon-wrap icon-blue">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
@@ -59,6 +60,7 @@ type: "page"
     <h3>自動化工作流程與 AI Agent</h3>
     <p>開發智慧化的工作流程自動化系統與 AI Agent，讓 AI 自主完成跨系統、跨流程的複雜任務，大幅提升營運效率。</p>
   </div>
+</div>
 </div>
 
 <hr class="styled-divider">

@@ -153,9 +153,81 @@ article a:hover {
 /* --- Feature Grid --- */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
+}
+
+/* Force 3 columns on wide screens */
+@media (min-width: 1000px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Scroll Grid (horizontal scroll for many cards) --- */
+.scroll-grid {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scroll-padding: 0 1rem;
+}
+
+.scroll-grid > * {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+}
+
+/* Wider cards on large screens */
+@media (min-width: 1200px) {
+  .scroll-grid > * {
+    flex: 0 0 360px;
+  }
+}
+
+/* Scrollbar styling */
+.scroll-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-grid::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.scroll-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 3px;
+}
+
+.scroll-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Scroll hint fade on right edge */
+.scroll-container {
+  position: relative;
+}
+
+.scroll-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 1rem;
+  width: 60px;
+  background: linear-gradient(to right, transparent, var(--bg-light));
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.scroll-container.scrolled-end::after {
+  opacity: 0;
 }
 
 /* --- Section Styling --- */
@@ -550,7 +622,7 @@ article a:hover {
 
 /* --- Full Width Content Override --- */
 .full-width-content {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }

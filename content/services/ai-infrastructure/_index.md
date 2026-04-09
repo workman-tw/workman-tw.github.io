@@ -16,7 +16,8 @@ type: "page"
 
 ## 服務內容
 
-<div class="feature-grid">
+<div class="scroll-container">
+<div class="scroll-grid">
   <div class="service-card">
     <div class="icon-wrap icon-green">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
@@ -59,6 +60,7 @@ type: "page"
     <h3>資訊安全與隱私保護</h3>
     <p>從架構層面確保 AI 系統的安全性，包括資料加密、存取控制、模型安全、對抗性攻擊防護，以及符合 GDPR 等隱私法規的設計。</p>
   </div>
+</div>
 </div>
 
 <hr class="styled-divider">
