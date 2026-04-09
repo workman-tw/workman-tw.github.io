@@ -1,0 +1,624 @@
+/* ============================================
+   一宇橙AI Custom Styles
+   ============================================ */
+
+/* --- Color Variables --- */
+:root {
+  --primary: #1a56db;
+  --primary-dark: #1e3a5f;
+  --primary-light: #3b82f6;
+  --accent: #f59e0b;
+  --accent-light: #fbbf24;
+  --gradient-start: #0f172a;
+  --gradient-end: #1e40af;
+  --text-dark: #1e293b;
+  --text-mid: #475569;
+  --text-light: #94a3b8;
+  --bg-light: #f8fafc;
+  --bg-card: #ffffff;
+  --success: #10b981;
+  --info: #06b6d4;
+}
+
+/* --- Global Enhancements --- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--primary-light);
+  color: white;
+}
+
+/* --- Header & Navigation --- */
+nav a {
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.85 !important;
+}
+
+header .cover,
+header > div:first-child {
+  position: relative;
+}
+
+/* Gradient header background */
+.bg-dark-blue {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%) !important;
+}
+
+header h1 {
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+
+header h2 {
+  font-weight: 300 !important;
+  opacity: 0.9;
+}
+
+/* --- Content Typography --- */
+article h2 {
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+article h3 {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+article a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+article a:hover {
+  border-bottom-color: var(--primary);
+}
+
+/* --- Service Cards --- */
+.service-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-card .icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 1.25rem;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.75rem 0;
+}
+
+.service-card p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.service-card .learn-more {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  transition: gap 0.2s ease;
+  gap: 0.35rem;
+  text-decoration: none;
+  border: none;
+}
+
+.service-card .learn-more:hover {
+  gap: 0.6rem;
+  border: none;
+}
+
+/* --- Icon backgrounds --- */
+.icon-blue { background: linear-gradient(135deg, #dbeafe, #bfdbfe); color: #2563eb; }
+.icon-green { background: linear-gradient(135deg, #d1fae5, #a7f3d0); color: #059669; }
+.icon-purple { background: linear-gradient(135deg, #e9d5ff, #d8b4fe); color: #7c3aed; }
+.icon-orange { background: linear-gradient(135deg, #fed7aa, #fdba74); color: #ea580c; }
+.icon-cyan { background: linear-gradient(135deg, #cffafe, #a5f3fc); color: #0891b2; }
+.icon-pink { background: linear-gradient(135deg, #fce7f3, #fbcfe8); color: #db2777; }
+
+/* --- Feature Grid --- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* --- Section Styling --- */
+.section-label {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.section-desc {
+  color: var(--text-mid);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero-section .section-title {
+  font-size: 2.25rem;
+}
+
+.hero-section .section-desc {
+  margin: 0 auto 2rem;
+}
+
+/* --- CTA Buttons --- */
+.cta-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white !important;
+  box-shadow: 0 4px 14px rgba(26, 86, 219, 0.4);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 86, 219, 0.5);
+  border: none;
+}
+
+.cta-secondary {
+  background: white;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+}
+
+.cta-secondary:hover {
+  background: var(--primary);
+  color: white !important;
+  border: none;
+}
+
+/* --- Stats Bar --- */
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2.5rem 1rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin: 2rem 0;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  margin-top: 0.25rem;
+}
+
+/* --- Team Cards --- */
+.team-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 1.25rem;
+  color: white;
+  font-weight: 700;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.25rem 0;
+}
+
+.team-card .role {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.team-card p {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* --- Process Steps --- */
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  counter-reset: step;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 160px;
+  max-width: 200px;
+  text-align: center;
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.3);
+}
+
+.process-step h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.process-step p {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+/* --- Detail Page Feature List --- */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.feature-list .feature-text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 0.25rem 0;
+}
+
+.feature-list .feature-text p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* --- Use Case Cards --- */
+.usecase-card {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+.usecase-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.usecase-card p {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Contact Section --- */
+.contact-info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.contact-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 0.25rem 0;
+}
+
+.contact-item p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.contact-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* --- Highlight Box --- */
+.highlight-box {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #bfdbfe;
+}
+
+.highlight-box.green {
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  border-color: #a7f3d0;
+}
+
+.highlight-box.purple {
+  background: linear-gradient(135deg, #faf5ff, #ede9fe);
+  border-color: #ddd6fe;
+}
+
+.highlight-box.orange {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border-color: #fed7aa;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-section .section-title {
+    font-size: 1.75rem;
+  }
+
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-step {
+    max-width: 100%;
+  }
+}
+
+/* --- Divider --- */
+.styled-divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--primary-light), transparent);
+  margin: 3rem 0;
+}
+
+/* --- Full Width Content Override --- */
+.full-width-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Smooth scroll --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Table Improvements --- */
+article table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem 0;
+}
+
+article table th {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.85rem 1.25rem;
+  text-align: left;
+}
+
+article table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  background: white;
+}
+
+article table tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- Blockquote --- */
+article blockquote {
+  border-left: 4px solid var(--primary);
+  background: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin: 1.5rem 0;
+  font-style: normal;
+}
+
+article blockquote p {
+  color: var(--text-dark);
+}
+
+/* --- Badge --- */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-green { background: #d1fae5; color: #065f46; }
+.badge-purple { background: #ede9fe; color: #5b21b6; }
+.badge-orange { background: #ffedd5; color: #c2410c; }
+
+/* --- Footer Enhancement --- */
+footer {
+  background: var(--gradient-start) !important;
+}

@@ -1,0 +1,22 @@
+{{/*
+  style/GetMainCSS
+  Simplified version compatible with Hugo 0.111+
+*/}}
+{{ $main_style := dict }}
+{{ $assets_to_concat := slice }}
+
+{{ range slice "_tachyons.css" "_code.css" "_hugo-internal-templates.css" "_social-icons.css" "_styles.css" }}
+  {{ with partialCached "func/style/GetResource" . . }}
+    {{ $assets_to_concat = $assets_to_concat | append . }}
+  {{ end }}
+{{ end }}
+
+{{ with $assets_to_concat }}
+  {{ $style := . | resources.Concat "ananke/css/main.css" | minify }}
+  {{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $style = $style | fingerprint }}
+  {{ end }}
+  {{ $main_style = $style }}
+{{ end }}
+
+{{ return $main_style }}

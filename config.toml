@@ -3,12 +3,21 @@ languageCode = 'zh-tw'
 title = '一宇橙AI 團隊'
 theme = 'ananke'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   featured_image = ''
   description = '一宇橙數位科技 AI 部門 — 協助台灣企業導入 AI 應用、基礎建設與教育訓練'
   site_logo = ''
   text_color = ''
   author = '一宇橙數位科技'
+  body_classes = 'avenir bg-near-white'
+  background_color_class = 'bg-dark-blue'
+  # custom_css loaded via head-additions partial
+  post_content_classes = 'sans-serif'
 
 [[menu.main]]
   name = '首頁'
@@ -21,6 +30,16 @@ theme = 'ananke'
   weight = 2
 
 [[menu.main]]
+  name = '團隊介紹'
+  url = '/team/'
+  weight = 3
+
+[[menu.main]]
   name = '關於我們'
   url = '/about/'
-  weight = 3
+  weight = 4
+
+[[menu.main]]
+  name = '聯絡我們'
+  url = '/contact/'
+  weight = 5

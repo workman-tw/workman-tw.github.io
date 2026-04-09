@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy {{ $.Param "text_color" | default "mid-gray" }}" style="max-width: 1100px;">
+      {{- .Content -}}
+    </section>
+    {{ if .Paginator.Pages }}
+    <section class="flex-ns flex-wrap justify-around mt5">
+      {{ range .Paginator.Pages }}
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>
+    {{- template "_internal/pagination.html" . -}}
+    {{ end }}
+  </article>
+{{ end }}
