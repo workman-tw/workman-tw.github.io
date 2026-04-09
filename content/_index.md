@@ -71,7 +71,7 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
 
 ## 為什麼選擇我們？
 
-<div class="feature-grid">
+<div class="feature-grid cols-2">
   <div class="highlight-box">
     <h3 style="margin-top:0;">在地化服務</h3>
     <p>深耕台灣市場，了解本土企業的獨特需求與挑戰，提供最貼近市場的 AI 解決方案。</p>

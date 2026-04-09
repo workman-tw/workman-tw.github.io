@@ -102,7 +102,7 @@ description: "認識一宇橙AI 團隊的專業成員"
 
 ## 團隊文化
 
-<div class="feature-grid">
+<div class="feature-grid cols-2">
   <div class="highlight-box">
     <h3 style="margin-top:0;">持續學習</h3>
     <p>AI 技術日新月異，我們的團隊每週進行技術分享與論文研讀，確保始終站在技術前沿，為客戶提供最先進的解決方案。</p>

@@ -25,7 +25,7 @@ description: "認識一宇橙AI 團隊"
 
 ## 我們的優勢
 
-<div class="feature-grid">
+<div class="feature-grid cols-2">
   <div class="service-card">
     <div class="icon-wrap icon-blue">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>

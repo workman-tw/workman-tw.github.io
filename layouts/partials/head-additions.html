@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/css/custom.css">
 <script defer>
 document.addEventListener('DOMContentLoaded', function() {
+  // Scroll grid fade hint
   document.querySelectorAll('.scroll-grid').forEach(function(grid) {
     grid.addEventListener('scroll', function() {
       var container = grid.parentElement;
@@ -8,6 +9,46 @@ document.addEventListener('DOMContentLoaded', function() {
       var atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 10;
       container.classList.toggle('scrolled-end', atEnd);
     });
+  });
+
+  // Dialog system
+  document.querySelectorAll('.service-card[data-dialog]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var dialogId = card.getAttribute('data-dialog');
+      var dialog = document.getElementById(dialogId);
+      if (dialog) {
+        dialog.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  document.querySelectorAll('.card-dialog').forEach(function(dialog) {
+    // Close on backdrop click
+    dialog.addEventListener('click', function(e) {
+      if (e.target === dialog) {
+        dialog.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    // Close on button click
+    var closeBtn = dialog.querySelector('.card-dialog-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        dialog.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.card-dialog.active').forEach(function(d) {
+        d.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
   });
 });
 </script>
