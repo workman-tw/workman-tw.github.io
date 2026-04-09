@@ -10,10 +10,6 @@ theme = 'ananke'
   text_color = ''
   author = '一宇橙數位科技'
 
-[params.favicon]
-  small = ''
-  medium = ''
-
 [[menu.main]]
   name = '首頁'
   url = '/'
