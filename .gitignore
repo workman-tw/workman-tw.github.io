@@ -7,9 +7,9 @@ resources/_gen/
 skills-lock.json
 vaults/tg/token.txt
 vaults/github/pat.txt
+vaults/gcp/gcp-sa.json
 vendir.lock.yml
 themes/ananke/
-tfstate/
 .terragrunt-cache/
 .terraform/
 .terraform.lock.hcl
