@@ -355,7 +355,7 @@ type: "page"
   </div>
   <div class="highlight-box green">
     <h3 style="margin-top:0;">企業級安全標準</h3>
-    <p>所有應用開發均遵循企業級安全標準，包括資料加密、存取控制、隱私保護機制，確保您的商業機密安全無虞。</p>
+    <p>所有應用開發均遵循 ISO 27001 資訊安全管理標準，涵蓋資料加密、存取控制、隱私保護與風險評估機制，確保您的商業機密安全無虞。</p>
   </div>
   <div class="highlight-box purple">
     <h3 style="margin-top:0;">持續維護與優化</h3>
