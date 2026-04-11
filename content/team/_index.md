@@ -22,11 +22,11 @@ description: "認識一宇橙AI 團隊的專業成員"
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
     </div>
     <h3>技術總監</h3>
-    <div class="role">AI Architecture Lead</div>
-    <p>超過 15 年軟體開發經驗，專精於 AI 系統架構設計與大型語言模型整合。</p>
+    <div class="role">Technical Director</div>
+    <p>超過 15 年軟體開發經驗，專精於系統架構設計、後端開發與大型專案技術管理。</p>
     <div style="margin-top: 1rem;">
       <span class="badge badge-blue">系統架構</span>
-      <span class="badge badge-purple">LLM</span>
+      <span class="badge badge-purple">後端開發</span>
       <span class="badge badge-green">專案管理</span>
     </div>
   </div>
@@ -103,20 +103,20 @@ description: "認識一宇橙AI 團隊的專業成員"
   <div class="card-dialog-content">
     <button class="card-dialog-close">&times;</button>
     <h3>技術總監</h3>
-    <div class="dialog-subtitle">AI Architecture Lead</div>
-    <p>超過 15 年軟體開發經驗，專精於 AI 系統架構設計與大型語言模型整合。曾主導多項企業 AI 轉型專案，從概念到落地一手掌握。</p>
+    <div class="dialog-subtitle">Technical Director</div>
+    <p>超過 15 年軟體開發經驗，專精於系統架構設計、後端開發與大型專案技術管理。曾主導多項企業級系統開發專案，從需求分析到上線維運一手掌握。</p>
     <div class="dialog-section">
       <h4>專業領域</h4>
       <ul>
-        <li>AI 系統架構設計與規劃</li>
-        <li>大型語言模型（LLM）整合與優化</li>
-        <li>企業 AI 轉型策略顧問</li>
+        <li>分散式系統架構設計與規劃</li>
+        <li>後端服務開發與 API 設計</li>
+        <li>DevOps 流程與 CI/CD 建置</li>
         <li>大型專案管理與團隊領導</li>
       </ul>
     </div>
     <div style="margin-top: 1.25rem;">
       <span class="badge badge-blue">系統架構</span>
-      <span class="badge badge-purple">LLM</span>
+      <span class="badge badge-purple">後端開發</span>
       <span class="badge badge-green">專案管理</span>
     </div>
   </div>

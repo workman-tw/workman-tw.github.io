@@ -62,6 +62,7 @@ type: "page"
   <div class="tab-nav">
     <button class="tab-btn active" data-tab="tab-cloud">雲端方案</button>
     <button class="tab-btn" data-tab="tab-onprem">地端方案</button>
+    <button class="tab-btn" data-tab="tab-hybrid">雲地混合方案</button>
   </div>
 
   <div class="tab-panel active" id="tab-cloud">
@@ -99,11 +100,6 @@ type: "page"
     <td>• GCP：Vertex AI Pipelines + Cloud Build<br>• AWS：SageMaker Pipelines + CodePipeline<br>• 模型版本管理與實驗追蹤（MLflow）<br>• 自動化模型重訓與 A/B 測試<br>• 模型退化偵測與告警機制<br>• 模型效能儀表板建置</td>
     <td>• 需要持續更新模型的企業<br>• 多模型管理與版本控制<br>• 自動化 ML 工作流需求</td>
     </tr>
-    <tr>
-    <td><span class="table-dialog-btn" data-dialog="dlg-infra-hybrid">混合雲架構設計</span><br><span class="badge badge-purple">Hybrid Cloud</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">兼顧雲端彈性與地端資料主權。</span></td>
-    <td>• 敏感資料地端處理、模型雲端訓練架構<br>• GCP Anthos / AWS Outposts 混合雲部署<br>• 邊緣運算（Edge AI）推論部署<br>• 跨雲資料同步與安全傳輸<br>• 統一管理面板與監控<br>• 災難復原與備援機制</td>
-    <td>• 有資料主權合規需求的企業<br>• 需要低延遲邊緣推論<br>• 多雲策略規劃</td>
-    </tr>
     </tbody>
     </table>
     </div>
@@ -133,6 +129,36 @@ type: "page"
     <td><span class="table-dialog-btn" data-dialog="dlg-infra-sec">資安與隱私保護</span><br><span class="badge badge-orange">Security</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">從架構層面確保 AI 系統安全。</span></td>
     <td>• 資料加密（傳輸中 / 靜態）<br>• 網路隔離與零信任架構<br>• 角色型存取控制（RBAC）<br>• 稽核日誌與合規報告<br>• 模型安全掃描與對抗性防護<br>• GDPR / ISO 27001 合規輔導</td>
     <td>• 受法規監管的產業<br>• 處理個資或機敏資料<br>• 需要通過資安稽核</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="tab-hybrid">
+    <p style="color: var(--text-mid); font-size: 1.05rem; margin-bottom: 1.5rem;">
+    兼顧雲端彈性與地端資料主權，根據資料敏感性、成本與效能需求，設計最適合的混合部署架構。
+    </p>
+    <div style="overflow-x: auto;">
+    <table>
+    <thead>
+    <tr><th>服務項目</th><th>服務內容</th><th>適用場景</th></tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><span class="table-dialog-btn" data-dialog="dlg-infra-hybrid">混合雲架構設計</span><br><span class="badge badge-purple">Hybrid Cloud</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">設計雲端與地端最佳混合部署架構。</span></td>
+    <td>• 敏感資料地端處理、模型雲端訓練架構<br>• GCP Anthos / AWS Outposts 混合雲部署<br>• 跨雲資料同步與安全傳輸<br>• 統一管理面板與監控<br>• 災難復原與備援機制<br>• 成本分攤與資源調度策略</td>
+    <td>• 有資料主權合規需求的企業<br>• 需要兼顧雲端彈性與地端安全<br>• 多雲策略規劃</td>
+    </tr>
+    <tr>
+    <td><span class="table-dialog-btn" data-dialog="dlg-infra-edge">邊緣運算部署</span><br><span class="badge badge-green">Edge AI</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">在邊緣裝置上進行 AI 推論。</span></td>
+    <td>• NVIDIA Jetson / Intel OpenVINO 部署<br>• 模型壓縮與量化（INT8 / FP16）<br>• 邊緣裝置遠端管理與 OTA 更新<br>• 離線推論與斷線恢復機制<br>• 邊緣與雲端資料同步策略<br>• 邊緣叢集管理（K3s / MicroK8s）</td>
+    <td>• 工廠即時品檢（無法依賴雲端）<br>• 門市 / 零售現場 AI 分析<br>• IoT 場域即時推論</td>
+    </tr>
+    <tr>
+    <td><span class="table-dialog-btn" data-dialog="dlg-infra-migrate">雲地遷移服務</span><br><span class="badge badge-blue">Migration</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">協助工作負載在雲端與地端之間遷移。</span></td>
+    <td>• 工作負載評估與遷移規劃<br>• 資料遷移工具與驗證流程<br>• 應用程式重構與容器化<br>• 漸進式遷移（Lift-and-Shift / Re-platform）<br>• 遷移後效能驗證與調優<br>• 回滾計畫與風險控管</td>
+    <td>• 從地端遷移至雲端<br>• 從雲端回收至地端<br>• 跨雲平台遷移</td>
     </tr>
     </tbody>
     </table>
@@ -334,6 +360,73 @@ type: "page"
       <div class="faq-item">
         <div class="faq-q">Q：管理複雜度會不會太高？</div>
         <div class="faq-a">A：我們會建立統一管理面板，並透過 Infrastructure as Code 工具自動化維運，有效降低管理複雜度。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hybrid Dialogs -->
+<div class="card-dialog" id="dlg-infra-edge">
+  <div class="card-dialog-content">
+    <button class="card-dialog-close">&times;</button>
+    <h3>邊緣運算部署</h3>
+    <div class="dialog-subtitle">技術架構與運作流程</div>
+    <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+      <h4>邊緣部署架構圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">雲端模型訓練</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">模型壓縮量化</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">邊緣裝置部署</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">即時推論運行</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">資料回傳雲端</div>
+      </div>
+    </div>
+    <div class="dialog-section">
+      <h4>常見問題（FAQ）</h4>
+      <div class="faq-item">
+        <div class="faq-q">Q：邊緣裝置斷網後還能運作嗎？</div>
+        <div class="faq-a">A：可以。邊緣推論完全在本地執行，斷網時推論不受影響，連線恢復後再同步資料回雲端。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：邊緣裝置的模型如何更新？</div>
+        <div class="faq-a">A：透過 OTA（Over-The-Air）遠端更新機制，可批次或漸進式更新邊緣裝置上的模型版本。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-dialog" id="dlg-infra-migrate">
+  <div class="card-dialog-content">
+    <button class="card-dialog-close">&times;</button>
+    <h3>雲地遷移服務</h3>
+    <div class="dialog-subtitle">技術架構與運作流程</div>
+    <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+      <h4>遷移流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">工作負載評估</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">遷移方案設計</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">資料與應用遷移</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">驗證與調優</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">正式切換上線</div>
+      </div>
+    </div>
+    <div class="dialog-section">
+      <h4>常見問題（FAQ）</h4>
+      <div class="faq-item">
+        <div class="faq-q">Q：遷移過程會造成服務中斷嗎？</div>
+        <div class="faq-a">A：我們採用漸進式遷移策略，搭配藍綠部署與流量切換，確保遷移過程零停機或極短停機。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：遷移失敗可以回滾嗎？</div>
+        <div class="faq-a">A：每個遷移階段都有完整的回滾計畫，確保任何環節出問題都能快速恢復到原始狀態。</div>
       </div>
     </div>
   </div>

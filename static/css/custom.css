@@ -817,7 +817,7 @@ footer .tc a {
 .card-dialog-content {
   background: white;
   border-radius: 20px;
-  max-width: 640px;
+  max-width: 860px;
   width: 100%;
   max-height: 85vh;
   overflow-y: auto;

@@ -13,6 +13,42 @@ description: "與一宇橙AI 團隊取得聯繫"
 
 <hr class="styled-divider">
 
+## 諮詢流程
+
+<div class="flowchart">
+  <div class="flowchart-step">
+    <div class="step-number">1</div>
+    <h4>提出需求</h4>
+    <p>透過電子郵件或電話告訴我們您的需求</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">2</div>
+    <h4>初步會談</h4>
+    <p>安排免費的線上或面對面諮詢會議</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">3</div>
+    <h4>需求釐清</h4>
+    <p>深入了解您的業務情境與期望目標</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">4</div>
+    <h4>方案提交</h4>
+    <p>提供客製化的服務方案與報價供您評估</p>
+  </div>
+</div>
+
+<hr class="styled-divider">
+
 <div class="contact-grid">
   <div class="contact-col">
     <h2 style="margin-top: 0;">聯絡方式</h2>
@@ -108,42 +144,6 @@ description: "與一宇橙AI 團隊取得聯繫"
         </li>
       </ul>
     </div>
-  </div>
-</div>
-
-<hr class="styled-divider">
-
-## 諮詢流程
-
-<div class="flowchart">
-  <div class="flowchart-step">
-    <div class="step-number">1</div>
-    <h4>提出需求</h4>
-    <p>透過電子郵件或電話告訴我們您的需求</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">2</div>
-    <h4>初步會談</h4>
-    <p>安排免費的線上或面對面諮詢會議</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">3</div>
-    <h4>需求釐清</h4>
-    <p>深入了解您的業務情境與期望目標</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">4</div>
-    <h4>方案提交</h4>
-    <p>提供客製化的服務方案與報價供您評估</p>
   </div>
 </div>
 
