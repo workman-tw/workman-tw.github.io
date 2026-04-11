@@ -357,6 +357,24 @@ article a:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
+.team-card[data-dialog] {
+  cursor: pointer;
+}
+
+.team-card[data-dialog]::after {
+  content: '點擊查看詳情';
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--primary-light);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.team-card[data-dialog]:hover::after {
+  opacity: 1;
+}
+
 .team-avatar {
   width: 100px;
   height: 100px;

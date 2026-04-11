@@ -1,7 +1,16 @@
-<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="tc">
-    <a class="f4 fw4 hover-white no-underline white-70 pv2 ph3" href="{{ .Site.Home.Permalink }}">
-      &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
-    </a>
+<footer class="bg-dark-blue bottom-0 w-100 pa3 pa4-ns" role="contentinfo">
+  <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    <div style="color: rgba(255,255,255,0.85); font-size: 0.9rem; line-height: 1.8;">
+      <span>網路新潮流就找一宇橙嘉義網頁設計</span>
+      <span style="margin: 0 0.5rem; opacity: 0.5;">|</span>
+      <span>嘉義市國華街245號5樓(國華街側電梯)</span>
+      <span style="margin: 0 0.5rem; opacity: 0.5;">|</span>
+      <span>05-2223562</span>
+      <span style="margin: 0 0.5rem; opacity: 0.5;">|</span>
+      <a href="mailto:info@ouorange.com" style="color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">info@ouorange.com</a>
+    </div>
+    <div style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.75rem;">
+      &copy; 2012 - {{ now.Format "2006" }} OUOrange Digital Design Co., Ltd. All Right Reserved
+    </div>
   </div>
 </footer>

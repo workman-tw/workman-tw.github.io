@@ -66,7 +66,7 @@ description: "認識一宇橙AI 團隊"
       <h3 style="margin-top: 0;">我們的母公司</h3>
       <p>一宇橙數位科技是一家致力於數位轉型的科技公司，提供軟體開發、系統整合與技術顧問等專業服務。多年來，我們協助眾多企業客戶完成數位化升級。</p>
       <p>AI 團隊的成立，是我們為客戶創造更多價值的重要里程碑。結合母公司豐富的軟體工程經驗與 AI 團隊的專業技術，我們能為客戶提供從傳統系統到智慧系統的完整升級路徑。</p>
-      <a href="https://www.workman.tw" class="cta-btn cta-secondary" style="margin-top: 0.5rem;">訪問一宇橙數位科技官網</a>
+      <a href="https://ouorange.com/" class="cta-btn cta-secondary" style="margin-top: 0.5rem;">訪問一宇橙數位科技官網</a>
     </div>
     <div style="flex: 0 0 auto;">
       <div class="stats-bar" style="flex-direction: column; gap: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.7); border-radius: 12px;">

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Dialog system
-  document.querySelectorAll('.service-card[data-dialog]').forEach(function(card) {
+  document.querySelectorAll('.service-card[data-dialog], .team-card[data-dialog]').forEach(function(card) {
     card.addEventListener('click', function() {
       var dialogId = card.getAttribute('data-dialog');
       var dialog = document.getElementById(dialogId);

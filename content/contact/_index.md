@@ -32,7 +32,16 @@ description: "與一宇橙AI 團隊取得聯繫"
         </div>
         <div>
           <h4>公司地址</h4>
-          <p>台灣</p>
+          <p>嘉義市國華街245號5樓(國華街側電梯)</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon icon-cyan">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <h4>聯絡電話</h4>
+          <p><a href="tel:05-2223562">05-2223562</a></p>
         </div>
       </div>
       <div class="contact-item">
@@ -41,7 +50,7 @@ description: "與一宇橙AI 團隊取得聯繫"
         </div>
         <div>
           <h4>電子郵件</h4>
-          <p><a href="mailto:contact@workman.tw">contact@workman.tw</a></p>
+          <p><a href="mailto:info@ouorange.com">info@ouorange.com</a></p>
         </div>
       </div>
       <div class="contact-item">
@@ -50,7 +59,7 @@ description: "與一宇橙AI 團隊取得聯繫"
         </div>
         <div>
           <h4>公司網站</h4>
-          <p><a href="https://www.workman.tw">www.workman.tw</a></p>
+          <p><a href="https://ouorange.com/">ouorange.com</a></p>
         </div>
       </div>
     </div>
@@ -136,7 +145,7 @@ description: "與一宇橙AI 團隊取得聯繫"
   <p style="max-width: 560px; margin: 1rem auto; color: var(--text-mid);">
     無論您的 AI 旅程才剛起步，還是正在尋找更進階的技術支援，我們都樂意與您分享我們的專業見解。
   </p>
-  <a href="mailto:contact@workman.tw" class="cta-btn cta-primary" style="margin-top: 1rem;">寄信給我們</a>
+  <a href="mailto:info@ouorange.com" class="cta-btn cta-primary" style="margin-top: 1rem;">寄信給我們</a>
 </div>
 
 <hr class="styled-divider">
