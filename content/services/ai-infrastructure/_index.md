@@ -12,6 +12,48 @@ type: "page"
   </p>
 </div>
 
+## 建置流程
+
+<div class="flowchart">
+  <div class="flowchart-step">
+    <div class="step-number">1</div>
+    <h4>環境評估</h4>
+    <p>盤點現有架構與 AI 就緒度</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">2</div>
+    <h4>架構設計</h4>
+    <p>規劃雲端/地端最佳方案</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">3</div>
+    <h4>環境建置</h4>
+    <p>IaC 自動化部署基礎設施</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">4</div>
+    <h4>驗證移交</h4>
+    <p>壓力測試與知識技術移轉</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">5</div>
+    <h4>監控維運</h4>
+    <p>7x24 監控與持續調優</p>
+  </div>
+</div>
+
 <hr class="styled-divider">
 
 ## 雲端 AI 基礎建設

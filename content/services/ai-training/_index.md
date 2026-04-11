@@ -12,6 +12,48 @@ type: "page"
   </p>
 </div>
 
+## 培訓流程
+
+<div class="flowchart">
+  <div class="flowchart-step">
+    <div class="step-number">1</div>
+    <h4>需求訪談</h4>
+    <p>了解團隊現況與學習目標</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">2</div>
+    <h4>課程設計</h4>
+    <p>量身打造教材與實作案例</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">3</div>
+    <h4>授課實作</h4>
+    <p>講師帶領 Hands-on 實戰</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">4</div>
+    <h4>成效驗收</h4>
+    <p>學員成果展示與回饋評估</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">5</div>
+    <h4>課後支援</h4>
+    <p>30 天技術社群與答疑服務</p>
+  </div>
+</div>
+
 <hr class="styled-divider">
 
 ## 課程體系

@@ -8,35 +8,42 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
   <h2 class="section-title">讓 AI 成為您企業的核心競爭力</h2>
 
   <div class="hero-anim">
-    <svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:#1a56db;stop-opacity:0.8" />
           <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.8" />
         </linearGradient>
       </defs>
-      <line x1="60" y1="50" x2="140" y2="30" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/></line>
-      <line x1="60" y1="50" x2="140" y2="70" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.5s" repeatCount="indefinite"/></line>
-      <line x1="140" y1="30" x2="200" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.8s" repeatCount="indefinite"/></line>
-      <line x1="140" y1="70" x2="200" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.2s" repeatCount="indefinite"/></line>
-      <line x1="200" y1="50" x2="260" y2="30" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.3s" repeatCount="indefinite"/></line>
-      <line x1="200" y1="50" x2="260" y2="70" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.7s" repeatCount="indefinite"/></line>
-      <line x1="260" y1="30" x2="340" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.1s" repeatCount="indefinite"/></line>
-      <line x1="260" y1="70" x2="340" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.9s" repeatCount="indefinite"/></line>
-      <circle r="3" fill="#3b82f6" opacity="0.8"><animateMotion dur="2s" repeatCount="indefinite" path="M60,50 L140,30 L200,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/></circle>
-      <circle r="3" fill="#f59e0b" opacity="0.8"><animateMotion dur="2.5s" repeatCount="indefinite" path="M60,50 L140,70 L200,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/></circle>
-      <circle r="3" fill="#10b981" opacity="0.8"><animateMotion dur="2.2s" repeatCount="indefinite" path="M200,50 L260,30 L340,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2.2s" repeatCount="indefinite"/></circle>
-      <circle r="3" fill="#7c3aed" opacity="0.8"><animateMotion dur="2.8s" repeatCount="indefinite" path="M200,50 L260,70 L340,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2.8s" repeatCount="indefinite"/></circle>
-      <circle cx="60" cy="50" r="10" fill="white" stroke="#1a56db" stroke-width="2"><animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/></circle>
-      <text x="60" y="55" text-anchor="middle" fill="#1a56db" font-size="13" font-weight="bold">資料</text>
-      <circle cx="140" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.5s" repeatCount="indefinite"/></circle>
-      <circle cx="140" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.8s" repeatCount="indefinite"/></circle>
-      <circle cx="200" cy="50" r="14" fill="white" stroke="#1a56db" stroke-width="2.5"><animate attributeName="r" values="13;16;13" dur="3s" repeatCount="indefinite"/></circle>
-      <text x="200" y="55" text-anchor="middle" fill="#1a56db" font-size="15" font-weight="bold">AI</text>
-      <circle cx="260" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.3s" repeatCount="indefinite"/></circle>
-      <circle cx="260" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.6s" repeatCount="indefinite"/></circle>
-      <circle cx="340" cy="50" r="10" fill="white" stroke="#10b981" stroke-width="2"><animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/></circle>
-      <text x="340" y="55" text-anchor="middle" fill="#10b981" font-size="13" font-weight="bold">洞察</text>
+      <!-- Connection lines -->
+      <line x1="75" y1="60" x2="170" y2="35" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/></line>
+      <line x1="75" y1="60" x2="170" y2="85" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.5s" repeatCount="indefinite"/></line>
+      <line x1="170" y1="35" x2="250" y2="60" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.8s" repeatCount="indefinite"/></line>
+      <line x1="170" y1="85" x2="250" y2="60" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.2s" repeatCount="indefinite"/></line>
+      <line x1="250" y1="60" x2="330" y2="35" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.3s" repeatCount="indefinite"/></line>
+      <line x1="250" y1="60" x2="330" y2="85" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.7s" repeatCount="indefinite"/></line>
+      <line x1="330" y1="35" x2="425" y2="60" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.1s" repeatCount="indefinite"/></line>
+      <line x1="330" y1="85" x2="425" y2="60" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.9s" repeatCount="indefinite"/></line>
+      <!-- Data flow particles -->
+      <circle r="3.5" fill="#3b82f6" opacity="0.8"><animateMotion dur="2s" repeatCount="indefinite" path="M75,60 L170,35 L250,60" /><animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/></circle>
+      <circle r="3.5" fill="#f59e0b" opacity="0.8"><animateMotion dur="2.5s" repeatCount="indefinite" path="M75,60 L170,85 L250,60" /><animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle r="3.5" fill="#10b981" opacity="0.8"><animateMotion dur="2.2s" repeatCount="indefinite" path="M250,60 L330,35 L425,60" /><animate attributeName="opacity" values="0;0.8;0" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle r="3.5" fill="#7c3aed" opacity="0.8"><animateMotion dur="2.8s" repeatCount="indefinite" path="M250,60 L330,85 L425,60" /><animate attributeName="opacity" values="0;0.8;0" dur="2.8s" repeatCount="indefinite"/></circle>
+      <!-- Node: 資料 -->
+      <circle cx="75" cy="60" r="22" fill="white" stroke="#1a56db" stroke-width="2.5"><animate attributeName="r" values="20;24;20" dur="4s" repeatCount="indefinite"/></circle>
+      <text x="75" y="65" text-anchor="middle" fill="#1a56db" font-size="16" font-weight="bold">資料</text>
+      <!-- Middle nodes -->
+      <circle cx="170" cy="35" r="12" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="10;14;10" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="170" cy="85" r="12" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="10;14;10" dur="3.8s" repeatCount="indefinite"/></circle>
+      <!-- Node: AI -->
+      <circle cx="250" cy="60" r="28" fill="white" stroke="#1a56db" stroke-width="3"><animate attributeName="r" values="26;31;26" dur="3s" repeatCount="indefinite"/></circle>
+      <text x="250" y="67" text-anchor="middle" fill="#1a56db" font-size="20" font-weight="bold">AI</text>
+      <!-- Middle nodes -->
+      <circle cx="330" cy="35" r="12" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="10;14;10" dur="3.3s" repeatCount="indefinite"/></circle>
+      <circle cx="330" cy="85" r="12" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="10;14;10" dur="3.6s" repeatCount="indefinite"/></circle>
+      <!-- Node: 洞察 -->
+      <circle cx="425" cy="60" r="22" fill="white" stroke="#10b981" stroke-width="2.5"><animate attributeName="r" values="20;24;20" dur="4s" repeatCount="indefinite"/></circle>
+      <text x="425" y="65" text-anchor="middle" fill="#10b981" font-size="16" font-weight="bold">洞察</text>
     </svg>
   </div>
 
@@ -66,50 +73,6 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
   <div class="stat-item">
     <span class="stat-number">100%</span>
     <span class="stat-label">客戶滿意度</span>
-  </div>
-</div>
-
-<hr class="styled-divider">
-
-## 合作流程
-
-<div class="flowchart">
-  <div class="flowchart-step">
-    <div class="step-number">1</div>
-    <h4>需求訪談</h4>
-    <p>深入了解您的業務痛點、目標與期望成果</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">2</div>
-    <h4>方案規劃</h4>
-    <p>制定最適合的 AI 導入策略與技術方案</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">3</div>
-    <h4>開發執行</h4>
-    <p>敏捷開發、快速迭代，確保進度透明可控</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">4</div>
-    <h4>測試驗收</h4>
-    <p>嚴格品質把關，確保系統穩定與效果達標</p>
-  </div>
-  <div class="flowchart-connector">
-    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-  <div class="flowchart-step">
-    <div class="step-number">5</div>
-    <h4>上線維運</h4>
-    <p>持續優化與技術支援，陪伴您長期成長</p>
   </div>
 </div>
 

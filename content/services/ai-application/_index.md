@@ -12,6 +12,48 @@ type: "page"
   </p>
 </div>
 
+## 合作流程
+
+<div class="flowchart">
+  <div class="flowchart-step">
+    <div class="step-number">1</div>
+    <h4>需求訪談</h4>
+    <p>了解業務痛點與 AI 應用目標</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">2</div>
+    <h4>概念驗證</h4>
+    <p>快速打造 PoC 驗證可行性</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">3</div>
+    <h4>敏捷開發</h4>
+    <p>Sprint 迭代交付可用功能</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">4</div>
+    <h4>測試上線</h4>
+    <p>嚴格品管與正式環境部署</p>
+  </div>
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
+    <div class="step-number">5</div>
+    <h4>持續優化</h4>
+    <p>監控模型效能並迭代改進</p>
+  </div>
+</div>
+
 <hr class="styled-divider">
 
 ## 服務內容
