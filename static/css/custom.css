@@ -930,3 +930,198 @@ footer .tc a {
 .service-card[data-dialog]:hover::after {
   opacity: 1;
 }
+
+/* --- Table Dialog Button --- */
+.table-dialog-btn {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border-bottom: 2px dashed var(--primary-light);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.table-dialog-btn:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary);
+  border-bottom-style: solid;
+}
+
+/* --- Flow Diagram --- */
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 12px;
+  margin: 0.75rem 0;
+  justify-content: center;
+}
+
+.flow-node {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(26, 86, 219, 0.2);
+}
+
+.flow-node.accent {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.2);
+}
+
+.flow-arrow {
+  color: var(--text-light);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.flow-arrow::after {
+  content: '\2192';
+}
+
+/* --- FAQ Items --- */
+.faq-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.faq-q {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.faq-a {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* --- Contact Grid (equal width columns) --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-col {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Flowchart --- */
+.flowchart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.flowchart-step {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  max-width: 180px;
+  flex-shrink: 0;
+}
+
+.flowchart-step .step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.3);
+}
+
+.flowchart-step h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.35rem 0;
+}
+
+.flowchart-step p {
+  font-size: 0.82rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.flowchart-connector {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .flowchart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flowchart-connector {
+    padding-top: 0;
+    transform: rotate(90deg);
+  }
+
+  .flowchart-step {
+    max-width: 100%;
+  }
+}
+
+/* --- Hero Animation --- */
+.hero-anim {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.hero-anim svg {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Reduce bottom blank space --- */
+article .hero-section:last-child,
+.hero-section:last-child {
+  padding-bottom: 0;
+}
+
+.styled-divider + .hero-section {
+  padding-top: 0;
+}
+
+article {
+  padding-bottom: 0 !important;
+}

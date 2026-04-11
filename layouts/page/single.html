@@ -1,7 +1,7 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
   <div class="center ph3 ph4-ns" style="max-width: 1600px;">
-    <article class="center cf pv4 ph3 ph4-ns">
+    <article class="center cf pt4 pb2 ph3 ph4-ns">
       <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
         {{ .Content }}
       </div>

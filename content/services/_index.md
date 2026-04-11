@@ -46,12 +46,12 @@ description: "一宇橙AI 團隊提供的專業 AI 服務"
     <div class="icon-wrap icon-purple">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
     </div>
-    <h3>AI 導入教育訓練</h3>
-    <p>透過系統化的教育訓練課程，讓企業團隊具備 AI 思維與實作能力。</p>
+    <h3>AI 教育訓練</h3>
+    <p>協助企業團隊正確使用 AI 工具，涵蓋開發、部署到維運的完整實務訓練。</p>
     <ul style="color: var(--text-mid); font-size: 0.9rem; padding-left: 1.25rem; margin: 0.75rem 0;">
-      <li>AI 基礎概念與趨勢</li>
-      <li>生成式 AI 工具實務</li>
-      <li>AI 程式開發工作坊</li>
+      <li>AI 工具正確使用指南</li>
+      <li>AI 應用開發實務</li>
+      <li>AI 部署與維運管理</li>
       <li>客製化企業內訓</li>
     </ul>
     <a href="/services/ai-training/" class="learn-more">查看完整服務 &rarr;</a>

@@ -13,8 +13,8 @@ description: "與一宇橙AI 團隊取得聯繫"
 
 <hr class="styled-divider">
 
-<div class="feature-grid">
-  <div style="flex: 1; min-width: 300px;">
+<div class="contact-grid">
+  <div class="contact-col">
     <h2 style="margin-top: 0;">聯絡方式</h2>
     <div class="contact-info-card">
       <div class="contact-item">
@@ -65,7 +65,7 @@ description: "與一宇橙AI 團隊取得聯繫"
     </div>
   </div>
 
-  <div style="flex: 1; min-width: 300px;">
+  <div class="contact-col">
     <h2 style="margin-top: 0;">服務諮詢</h2>
     <div class="contact-info-card">
       <p style="color: var(--text-mid); margin-top: 0;">我們提供免費的初步諮詢服務，協助您評估 AI 導入的可行性與最佳方案。以下是常見的諮詢主題：</p>
@@ -115,23 +115,32 @@ description: "與一宇橙AI 團隊取得聯繫"
 
 ## 諮詢流程
 
-<div class="process-steps">
-  <div class="process-step">
+<div class="flowchart">
+  <div class="flowchart-step">
     <div class="step-number">1</div>
     <h4>提出需求</h4>
     <p>透過電子郵件或電話告訴我們您的需求</p>
   </div>
-  <div class="process-step">
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
     <div class="step-number">2</div>
     <h4>初步會談</h4>
     <p>安排免費的線上或面對面諮詢會議</p>
   </div>
-  <div class="process-step">
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
     <div class="step-number">3</div>
     <h4>需求釐清</h4>
     <p>深入了解您的業務情境與期望目標</p>
   </div>
-  <div class="process-step">
+  <div class="flowchart-connector">
+    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12 L30 12 M24 6 L30 12 L24 18" fill="none" stroke="var(--primary-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="flowchart-step">
     <div class="step-number">4</div>
     <h4>方案提交</h4>
     <p>提供客製化的服務方案與報價供您評估</p>
@@ -140,18 +149,10 @@ description: "與一宇橙AI 團隊取得聯繫"
 
 <hr class="styled-divider">
 
-<div class="highlight-box" style="text-align: center; padding: 2.5rem;">
+<div class="highlight-box" style="text-align: center; padding: 2rem;">
   <h3 style="margin-top: 0; font-size: 1.5rem;">準備好踏出第一步了嗎？</h3>
   <p style="max-width: 560px; margin: 1rem auto; color: var(--text-mid);">
     無論您的 AI 旅程才剛起步，還是正在尋找更進階的技術支援，我們都樂意與您分享我們的專業見解。
   </p>
-  <a href="mailto:info@ouorange.com" class="cta-btn cta-primary" style="margin-top: 1rem;">寄信給我們</a>
-</div>
-
-<hr class="styled-divider">
-
-<div style="text-align: center; padding: 1rem;">
-  <p style="color: var(--text-light); font-style: italic; font-size: 1.1rem;">
-    讓我們一起擁抱 AI，開創企業新未來。
-  </p>
+  <a href="mailto:info@ouorange.com" class="cta-btn cta-primary" style="margin-top: 0.5rem;">寄信給我們</a>
 </div>

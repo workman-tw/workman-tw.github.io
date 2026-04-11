@@ -6,8 +6,87 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
 <div class="hero-section">
   <span class="section-label">Welcome to Workman AI</span>
   <h2 class="section-title">讓 AI 成為您企業的核心競爭力</h2>
+
+  <div class="hero-anim">
+    <svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#1a56db;stop-opacity:0.8" />
+          <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+        </linearGradient>
+      </defs>
+      <!-- Connection lines -->
+      <line x1="60" y1="50" x2="140" y2="30" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="60" y1="50" x2="140" y2="70" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="140" y1="30" x2="200" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.8s" repeatCount="indefinite"/>
+      </line>
+      <line x1="140" y1="70" x2="200" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="200" y1="50" x2="260" y2="30" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="3.3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="200" y1="50" x2="260" y2="70" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="2.7s" repeatCount="indefinite"/>
+      </line>
+      <line x1="260" y1="30" x2="340" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.1s" repeatCount="indefinite"/>
+      </line>
+      <line x1="260" y1="70" x2="340" y2="50" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="2.9s" repeatCount="indefinite"/>
+      </line>
+      <!-- Data flow particles -->
+      <circle r="3" fill="#3b82f6" opacity="0.8">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M60,50 L140,30 L200,50" />
+        <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#f59e0b" opacity="0.8">
+        <animateMotion dur="2.5s" repeatCount="indefinite" path="M60,50 L140,70 L200,50" />
+        <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#10b981" opacity="0.8">
+        <animateMotion dur="2.2s" repeatCount="indefinite" path="M200,50 L260,30 L340,50" />
+        <animate attributeName="opacity" values="0;0.8;0" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" fill="#7c3aed" opacity="0.8">
+        <animateMotion dur="2.8s" repeatCount="indefinite" path="M200,50 L260,70 L340,50" />
+        <animate attributeName="opacity" values="0;0.8;0" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Nodes -->
+      <circle cx="60" cy="50" r="10" fill="white" stroke="#1a56db" stroke-width="2">
+        <animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="60" y="54" text-anchor="middle" fill="#1a56db" font-size="9" font-weight="bold">資料</text>
+      <circle cx="140" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5">
+        <animate attributeName="r" values="7;9;7" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="140" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5">
+        <animate attributeName="r" values="7;9;7" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="50" r="14" fill="white" stroke="#1a56db" stroke-width="2.5">
+        <animate attributeName="r" values="13;16;13" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="200" y="53" text-anchor="middle" fill="#1a56db" font-size="10" font-weight="bold">AI</text>
+      <circle cx="260" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5">
+        <animate attributeName="r" values="7;9;7" dur="3.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="260" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5">
+        <animate attributeName="r" values="7;9;7" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="340" cy="50" r="10" fill="white" stroke="#10b981" stroke-width="2">
+        <animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="340" y="54" text-anchor="middle" fill="#10b981" font-size="9" font-weight="bold">洞察</text>
+    </svg>
+  </div>
+
   <p class="section-desc">
-    <strong>一宇橙AI 團隊</strong>是由<a href="https://www.workman.tw">一宇橙數位科技</a>成立的專業部門，專注於協助台灣企業在 AI 時代中掌握關鍵競爭力。我們提供從策略規劃到落地執行的完整 AI 解決方案。
+    <strong>一宇橙AI 團隊</strong>是由<a href="https://ouorange.com/">一宇橙數位科技</a>成立的專業部門，專注於協助台灣企業在 AI 時代中掌握關鍵競爭力。我們提供從策略規劃到落地執行的完整 AI 解決方案。
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="/services/" class="cta-btn cta-primary">探索我們的服務</a>
@@ -61,8 +140,8 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
     <div class="icon-wrap icon-purple">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
     </div>
-    <h3>AI 導入教育訓練</h3>
-    <p>透過系統化課程，讓您的團隊具備 AI 思維與實作能力，加速企業 AI 轉型。</p>
+    <h3>AI 教育訓練</h3>
+    <p>協助企業團隊正確使用 AI 工具，涵蓋開發、部署到維運的完整實務訓練。</p>
     <a href="/services/ai-training/" class="learn-more">了解更多 &rarr;</a>
   </div>
 </div>
@@ -90,9 +169,7 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
   </div>
 </div>
 
-<hr class="styled-divider">
-
-<div class="hero-section">
+<div class="hero-section" style="padding-bottom: 0;">
   <h2 class="section-title">準備好開始您的 AI 轉型之旅了嗎？</h2>
   <p class="section-desc">
     無論您是剛開始探索 AI 的可能性，還是正在尋找專業的 AI 開發團隊，我們都能為您量身打造最適合的方案。

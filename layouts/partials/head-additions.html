@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Dialog system
-  document.querySelectorAll('.service-card[data-dialog], .team-card[data-dialog]').forEach(function(card) {
-    card.addEventListener('click', function() {
-      var dialogId = card.getAttribute('data-dialog');
+  // Dialog system — handles any element with data-dialog attribute
+  document.querySelectorAll('[data-dialog]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var dialogId = el.getAttribute('data-dialog');
       var dialog = document.getElementById(dialogId);
       if (dialog) {
         dialog.classList.add('active');
