@@ -149,6 +149,17 @@ description: "與一宇橙 AI 團隊取得聯繫"
 
 <hr class="styled-divider">
 
+## 合作夥伴
+
+<div class="feature-grid">
+  <a href="https://jt-qc.com/" target="_blank" rel="noopener" class="service-card service-link" style="text-align: center;">
+    <h3 style="margin: 0;">錦田雲端科技</h3>
+    <p>雲端技術與數位轉型合作夥伴</p>
+  </a>
+</div>
+
+<hr class="styled-divider">
+
 <div class="highlight-box" style="text-align: center; padding: 2rem;">
   <h3 style="margin-top: 0; font-size: 1.5rem;">準備好踏出第一步了嗎？</h3>
   <p style="max-width: 560px; margin: 1rem auto; color: var(--text-mid);">
