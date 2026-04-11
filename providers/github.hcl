@@ -1,5 +1,5 @@
 locals {
-  gh_pat_path = "${get_repo_root()}/vaults/github/pat.txt"
+  gh_pat_path = "${get_repo_root()}/vaults/github/repo-class-pat.txt"
   gh_pat      = file(local.gh_pat_path)
   gh_org      = "workman-tw"
 }

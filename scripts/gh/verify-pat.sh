@@ -26,7 +26,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-PAT_FILE="${ROOT_DIR}/vaults/github/account-pat.txt"
+PAT_FILE="${ROOT_DIR}/vaults/github/repo-class-pat.txt"
 GH_ORG="workman-tw"
 GH_REPO="workman-tw.github.io"
 
