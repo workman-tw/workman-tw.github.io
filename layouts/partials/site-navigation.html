@@ -12,18 +12,24 @@
       {{ if .Site.Menus.main }}
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }} nav-menu">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}{{ if eq .URL "/services/" }} has-dropdown{{ end }}">
-            <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
-              {{ .Name }}{{ if eq .URL "/services/" }} <span class="dropdown-arrow">&#9662;</span>{{ end }}
-            </a>
-            {{ if eq .URL "/services/" }}
+          {{ if eq .URL "/services/" }}
+          <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }} has-dropdown">
+            <span class="hover-white no-underline white-90 pointer">
+              {{ .Name }} <span class="dropdown-arrow">&#9662;</span>
+            </span>
             <ul class="dropdown-menu">
               <li><a href="/services/ai-application/">AI 應用開發</a></li>
               <li><a href="/services/ai-infrastructure/">AI 基礎建設</a></li>
               <li><a href="/services/ai-training/">AI 教育訓練</a></li>
             </ul>
-            {{ end }}
           </li>
+          {{ else }}
+          <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
           {{ end }}
         </ul>
       {{ end }}

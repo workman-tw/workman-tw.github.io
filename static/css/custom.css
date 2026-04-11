@@ -124,22 +124,17 @@ article a:hover {
   line-height: 1.7;
 }
 
-.service-card .learn-more {
-  display: inline-flex;
-  align-items: center;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  transition: gap 0.2s ease;
-  gap: 0.35rem;
+/* --- Service Card as Link --- */
+a.service-link {
+  display: block;
   text-decoration: none;
-  border: none;
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.service-card .learn-more:hover {
-  gap: 0.6rem;
-  border: none;
+a.service-link:hover {
+  border-bottom-color: transparent;
 }
 
 /* --- Icon backgrounds --- */
@@ -1124,4 +1119,25 @@ article .hero-section:last-child,
 
 article {
   padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Eliminate gap between article and footer — override Ananke pb7 */
+main.pb7 {
+  padding-bottom: 1rem !important;
+}
+
+main + footer,
+main ~ footer {
+  margin-top: 0 !important;
+}
+
+/* Remove last styled-divider bottom margin */
+.styled-divider:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Nav dropdown toggle cursor */
+.has-dropdown > span.pointer {
+  cursor: pointer;
 }
