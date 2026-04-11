@@ -4,6 +4,7 @@ import './just.d/hugo.just'
 import './just.d/gitsecret.just'
 import './just.d/vendir.just'
 import './just.d/tg.just'
+import './just.d/gh.just'
 
 # Default invocation prints the command list
 default:
