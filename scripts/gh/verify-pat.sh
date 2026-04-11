@@ -63,14 +63,14 @@ check() {
 
 # --- 1. Authentication ---
 echo "Checking authentication..."
-RESPONSE="$(curl -sf -H "$AUTH" -D - -o /dev/null "${API}/user" 2>/dev/null || echo "HTTP 401")"
-SCOPES="$(echo "$RESPONSE" | grep -i '^x-oauth-scopes:' | sed 's/^[^:]*: //' | tr -d '\r')"
-USER_INFO="$(curl -sf -H "$AUTH" "${API}/user" 2>/dev/null || echo "{}")"
-USERNAME="$(echo "$USER_INFO" | python3 -c "import sys,json; print(json.load(sys.stdin).get('login',''))" 2>/dev/null || echo "")"
+HEADERS="$(curl -s -H "$AUTH" -D - -o /dev/null "${API}/user" 2>/dev/null)" || true
+SCOPES="$(echo "$HEADERS" | grep -i '^x-oauth-scopes:' | sed 's/^[^:]*: //' | tr -d '\r' || true)"
+USER_INFO="$(curl -s -H "$AUTH" "${API}/user" 2>/dev/null)" || true
+USERNAME="$(echo "$USER_INFO" | python3 -c "import sys,json; print(json.load(sys.stdin).get('login',''))" 2>/dev/null)" || true
 
 if [ -n "$USERNAME" ]; then
   echo "  Authenticated as: ${USERNAME}"
-  echo "  Scopes: ${SCOPES:-"(fine-grained token — no classic scopes)"}"
+  echo "  Scopes: ${SCOPES:-"(fine-grained token)"}"
   check "Token is valid" "true"
 else
   check "Token is valid" "false"
@@ -92,19 +92,19 @@ fi
 # --- 3. Org access ---
 echo ""
 echo "Checking org access..."
-ORG_STATUS="$(curl -sf -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/orgs/${GH_ORG}" 2>/dev/null || echo "000")"
+ORG_STATUS="$(curl -s -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/orgs/${GH_ORG}")" || true
 check "Access to org ${GH_ORG}" "$([ "$ORG_STATUS" = "200" ] && echo true || echo false)"
 
 # --- 4. Repo access ---
 echo ""
 echo "Checking repo access..."
-REPO_STATUS="$(curl -sf -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/repos/${GH_ORG}/${GH_REPO}" 2>/dev/null || echo "000")"
+REPO_STATUS="$(curl -s -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/repos/${GH_ORG}/${GH_REPO}")" || true
 check "Access to repo ${GH_ORG}/${GH_REPO}" "$([ "$REPO_STATUS" = "200" ] && echo true || echo false)"
 
 # --- 5. Environment secrets access ---
 echo ""
 echo "Checking environment secrets access..."
-ENV_STATUS="$(curl -sf -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/repos/${GH_ORG}/${GH_REPO}/environments/prod/secrets" 2>/dev/null || echo "000")"
+ENV_STATUS="$(curl -s -o /dev/null -w "%{http_code}" -H "$AUTH" "${API}/repos/${GH_ORG}/${GH_REPO}/environments/prod/secrets")" || true
 check "Read environment secrets (prod)" "$([ "$ENV_STATUS" = "200" ] && echo true || echo false)"
 
 # --- Summary ---
