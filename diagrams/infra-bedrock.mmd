@@ -1,0 +1,5 @@
+flowchart LR
+  A[應用程式\n請求] --> B[Bedrock\nAPI Gateway]
+  B --> C[Knowledge\nBases RAG]
+  C --> D[基礎模型\n推論]
+  D --> E[Guardrails\n過濾]

@@ -1,0 +1,9 @@
+flowchart TB
+  subgraph 地端
+    A[資料中心] --> B[地端推論]
+  end
+  subgraph 雲端
+    C[模型訓練] --> D[Model Registry]
+  end
+  A -->|VPN / 專線| C
+  D -->|模型同步| B

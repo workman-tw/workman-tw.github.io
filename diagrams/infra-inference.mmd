@@ -1,0 +1,5 @@
+flowchart LR
+  A[模型匯入] --> B[格式轉換\nTensorRT/ONNX]
+  B --> C[Triton\nServer]
+  C --> D[API\nGateway]
+  D --> E[監控 &\n自動擴縮]

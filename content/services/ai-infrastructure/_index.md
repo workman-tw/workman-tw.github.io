@@ -174,13 +174,7 @@ type: "page"
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[BigQuery\n資料準備] --> B[Vertex AI\nWorkbench]
-  B --> C[AutoML /\nCustom 訓練]
-  C --> D[Model\nRegistry]
-  D --> E[Endpoint\n部署]
-      </pre>
+      <img src="/images/diagrams/infra-vertex.svg" alt="infra-vertex 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -203,13 +197,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[S3\n資料儲存] --> B[SageMaker\nStudio]
-  B --> C[Training\nJob]
-  C --> D[Model\nMonitor]
-  D --> E[Endpoint\n推論]
-      </pre>
+      <img src="/images/diagrams/infra-sagemaker.svg" alt="infra-sagemaker 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -232,13 +220,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[應用程式\n請求] --> B[Bedrock\nAPI Gateway]
-  B --> C[Knowledge\nBases RAG]
-  C --> D[基礎模型\n推論]
-  D --> E[Guardrails\n過濾]
-      </pre>
+      <img src="/images/diagrams/infra-bedrock.svg" alt="infra-bedrock 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -261,13 +243,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[資料來源\nDB/API/IoT] --> B[即時擷取\nPub/Sub]
-  B --> C[ETL\n轉換處理]
-  C --> D[Data Lake\n儲存]
-  D --> E[品質監控\n& 告警]
-      </pre>
+      <img src="/images/diagrams/infra-pipeline.svg" alt="infra-pipeline 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -290,14 +266,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[程式碼\n提交] --> B[CI/CD\n觸發]
-  B --> C[自動訓練\n& 測試]
-  C --> D[模型註冊\n& 審核]
-  D --> E[自動部署\n& 監控]
-  E -->|回饋| A
-      </pre>
+      <img src="/images/diagrams/infra-mlops.svg" alt="infra-mlops 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -320,17 +289,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart TB
-  subgraph 地端
-    A[資料中心] --> B[地端推論]
-  end
-  subgraph 雲端
-    C[模型訓練] --> D[Model Registry]
-  end
-  A -->|VPN / 專線| C
-  D -->|模型同步| B
-      </pre>
+      <img src="/images/diagrams/infra-hybrid.svg" alt="infra-hybrid 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -354,17 +313,7 @@ flowchart TB
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart TB
-  subgraph 雲端
-    A[模型訓練] --> B[壓縮量化]
-  end
-  subgraph 邊緣
-    C[裝置部署] --> D[即時推論]
-  end
-  B -->|OTA 推送| C
-  D -->|資料回傳| A
-      </pre>
+      <img src="/images/diagrams/infra-edge.svg" alt="infra-edge 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -387,13 +336,7 @@ flowchart TB
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[工作負載\n評估] --> B[遷移方案\n設計]
-  B --> C[資料與\n應用遷移]
-  C --> D[驗證\n& 調優]
-  D --> E[正式切換\n上線]
-      </pre>
+      <img src="/images/diagrams/infra-migrate.svg" alt="infra-migrate 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -417,13 +360,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[工作負載\n分析] --> B[GPU 選型\n& 規格]
-  B --> C[硬體採購\n部署]
-  C --> D[CUDA\n環境建置]
-  D --> E[K8s GPU\n排程]
-      </pre>
+      <img src="/images/diagrams/infra-gpu.svg" alt="infra-gpu 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -446,13 +383,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart LR
-  A[模型匯入] --> B[格式轉換\nTensorRT/ONNX]
-  B --> C[Triton\nServer]
-  C --> D[API\nGateway]
-  D --> E[監控 &\n自動擴縮]
-      </pre>
+      <img src="/images/diagrams/infra-inference.svg" alt="infra-inference 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -475,14 +406,7 @@ flowchart LR
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
       <h4>系統架構圖</h4>
-      <pre class="mermaid">
-flowchart TB
-  A[威脅評估] --> B[零信任\n網路設計]
-  B --> C[RBAC\n權限配置]
-  C --> D[加密 &\n稽核日誌]
-  D --> E[合規報告\n產出]
-  E -->|持續監控| A
-      </pre>
+      <img src="/images/diagrams/infra-security.svg" alt="infra-security 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>

@@ -6,6 +6,7 @@ import './just.d/vendir.just'
 import './just.d/tg.just'
 import './just.d/gh.just'
 import './just.d/slide.just'
+import './just.d/diagram.just'
 
 # Default invocation prints the command list
 default:

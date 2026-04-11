@@ -1,0 +1,9 @@
+flowchart TB
+  subgraph 雲端
+    A[模型訓練] --> B[壓縮量化]
+  end
+  subgraph 邊緣
+    C[裝置部署] --> D[即時推論]
+  end
+  B -->|OTA 推送| C
+  D -->|資料回傳| A

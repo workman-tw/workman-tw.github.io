@@ -1,12 +1,6 @@
 <link rel="stylesheet" href="/css/custom.css">
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 <script defer>
 document.addEventListener('DOMContentLoaded', function() {
-  // Mermaid init
-  mermaid.initialize({ startOnLoad: false, theme: 'base', themeVariables: { primaryColor: '#dbeafe', primaryTextColor: '#1e3a5f', primaryBorderColor: '#3b82f6', lineColor: '#3b82f6', secondaryColor: '#f1f5f9', tertiaryColor: '#ede9fe' }});
-  // Render visible mermaid blocks
-  mermaid.run({ querySelector: '.mermaid' });
-
   // Scroll grid fade hint
   document.querySelectorAll('.scroll-grid').forEach(function(grid) {
     grid.addEventListener('scroll', function() {
@@ -26,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (dialog) {
         dialog.classList.add('active');
         document.body.style.overflow = 'hidden';
-        // Render mermaid inside newly visible dialog
-        var pending = dialog.querySelectorAll('.mermaid:not([data-processed])');
-        if (pending.length) mermaid.run({ nodes: pending });
       }
     });
   });

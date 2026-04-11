@@ -1,0 +1,5 @@
+flowchart LR
+  A[資料來源\nDB/API/IoT] --> B[即時擷取\nPub/Sub]
+  B --> C[ETL\n轉換處理]
+  C --> D[Data Lake\n儲存]
+  D --> E[品質監控\n& 告警]

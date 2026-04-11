@@ -1,0 +1,5 @@
+flowchart LR
+  A[BigQuery\n資料準備] --> B[Vertex AI\nWorkbench]
+  B --> C[AutoML /\nCustom 訓練]
+  C --> D[Model\nRegistry]
+  D --> E[Endpoint\n部署]
