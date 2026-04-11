@@ -28,15 +28,15 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
       <circle r="3" fill="#10b981" opacity="0.8"><animateMotion dur="2.2s" repeatCount="indefinite" path="M200,50 L260,30 L340,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2.2s" repeatCount="indefinite"/></circle>
       <circle r="3" fill="#7c3aed" opacity="0.8"><animateMotion dur="2.8s" repeatCount="indefinite" path="M200,50 L260,70 L340,50" /><animate attributeName="opacity" values="0;0.8;0" dur="2.8s" repeatCount="indefinite"/></circle>
       <circle cx="60" cy="50" r="10" fill="white" stroke="#1a56db" stroke-width="2"><animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/></circle>
-      <text x="60" y="54" text-anchor="middle" fill="#1a56db" font-size="9" font-weight="bold">資料</text>
+      <text x="60" y="55" text-anchor="middle" fill="#1a56db" font-size="13" font-weight="bold">資料</text>
       <circle cx="140" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.5s" repeatCount="indefinite"/></circle>
       <circle cx="140" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.8s" repeatCount="indefinite"/></circle>
       <circle cx="200" cy="50" r="14" fill="white" stroke="#1a56db" stroke-width="2.5"><animate attributeName="r" values="13;16;13" dur="3s" repeatCount="indefinite"/></circle>
-      <text x="200" y="53" text-anchor="middle" fill="#1a56db" font-size="10" font-weight="bold">AI</text>
+      <text x="200" y="55" text-anchor="middle" fill="#1a56db" font-size="15" font-weight="bold">AI</text>
       <circle cx="260" cy="30" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.3s" repeatCount="indefinite"/></circle>
       <circle cx="260" cy="70" r="8" fill="white" stroke="#3b82f6" stroke-width="1.5"><animate attributeName="r" values="7;9;7" dur="3.6s" repeatCount="indefinite"/></circle>
       <circle cx="340" cy="50" r="10" fill="white" stroke="#10b981" stroke-width="2"><animate attributeName="r" values="9;11;9" dur="4s" repeatCount="indefinite"/></circle>
-      <text x="340" y="54" text-anchor="middle" fill="#10b981" font-size="9" font-weight="bold">洞察</text>
+      <text x="340" y="55" text-anchor="middle" fill="#10b981" font-size="13" font-weight="bold">洞察</text>
     </svg>
   </div>
 
