@@ -1,13 +1,13 @@
 ---
 title: "關於我們"
-description: "認識一宇橙AI 團隊"
+description: "認識一宇橙 AI 團隊"
 ---
 
 <div class="hero-section">
   <span class="section-label">About Us</span>
   <h2 class="section-title">用 AI 為台灣企業注入新動力</h2>
   <p class="section-desc">
-    <strong>一宇橙AI 團隊</strong>是一宇橙數位科技旗下的全新部門，專注於 AI 技術的應用與推廣，協助台灣企業跨越 AI 導入的門檻。
+    <strong>一宇橙 AI 團隊</strong>是一宇橙數位科技旗下的全新部門，專注於 AI 技術的應用與推廣，協助台灣企業跨越 AI 導入的門檻。
   </p>
 </div>
 

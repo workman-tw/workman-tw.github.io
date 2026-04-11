@@ -1,5 +1,5 @@
 ---
-title: "一宇橙AI 團隊"
+title: "一宇橙 AI 團隊"
 description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
 ---
 
@@ -48,7 +48,7 @@ description: "協助台灣企業擁抱 AI 時代，打造智慧未來"
   </div>
 
   <p class="section-desc">
-    <strong>一宇橙AI 團隊</strong>是由<a href="https://ouorange.com/">一宇橙數位科技</a>成立的專業部門，專注於協助台灣企業在 AI 時代中掌握關鍵競爭力。我們提供從策略規劃到落地執行的完整 AI 解決方案。
+    <strong>一宇橙 AI 團隊</strong>是由<a href="https://ouorange.com/">一宇橙數位科技</a>成立的專業部門，專注於協助台灣企業在 AI 時代中掌握關鍵競爭力。我們提供從策略規劃到落地執行的完整 AI 解決方案。
   </p>
   <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="/contact/" class="cta-btn cta-primary">立即諮詢</a>

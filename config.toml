@@ -1,6 +1,6 @@
 baseURL = 'https://workman-tw.github.io/'
 languageCode = 'zh-tw'
-title = '一宇橙AI 團隊'
+title = '一宇橙 AI 團隊'
 theme = 'ananke'
 
 [markup]

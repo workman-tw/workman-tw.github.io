@@ -1,13 +1,13 @@
 ---
 title: "團隊介紹"
-description: "認識一宇橙AI 團隊的專業成員"
+description: "認識一宇橙 AI 團隊的專業成員"
 ---
 
 <div class="hero-section">
   <span class="section-label">Our Team</span>
   <h2 class="section-title">熱情、專業、值得信賴的夥伴</h2>
   <p class="section-desc">
-    一宇橙AI 團隊匯聚了軟體工程、人工智慧、資料科學與企業顧問等多元背景的專業人才。我們共同的目標，是協助台灣企業以最務實的方式擁抱 AI 技術。
+    一宇橙 AI 團隊匯聚了軟體工程、人工智慧、資料科學與企業顧問等多元背景的專業人才。我們共同的目標，是協助台灣企業以最務實的方式擁抱 AI 技術。
   </p>
 </div>
 

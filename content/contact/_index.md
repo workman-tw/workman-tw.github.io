@@ -1,6 +1,6 @@
 ---
 title: "聯絡我們"
-description: "與一宇橙AI 團隊取得聯繫"
+description: "與一宇橙 AI 團隊取得聯繫"
 ---
 
 <div class="hero-section">
