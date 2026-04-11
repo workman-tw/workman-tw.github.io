@@ -13,3 +13,4 @@ themes/ananke/
 .terragrunt-cache/
 .terraform/
 .terraform.lock.hcl
+vaults/tg/id.txt

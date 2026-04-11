@@ -3,47 +3,52 @@
 # test-send.sh — Send a test message via Telegram Bot API
 #
 # DESCRIPTION
-#   Reads the bot token from vaults/tg/token.txt and sends a test message.
+#   Reads the bot token from vaults/tg/token.txt and the recipient chat ID
+#   from vaults/tg/id.txt, then sends a test message.
 #
-#   The token file contains a Telegram Bot API token in the format:
-#     <chat_id>:<secret_key>
-#   The chat_id (the number before the colon) is used as the message recipient.
-#   The full string is used as the bot authentication token.
+# FILES
+#   vaults/tg/token.txt — Telegram Bot API token (e.g. 123456789:AAHdq...)
+#   vaults/tg/id.txt    — Recipient chat ID (user or group)
 #
 # USAGE
 #   ./scripts/tg/test-send.sh       # send test message
 #   just tg-test                     # run via just command
 #
 # PREREQUISITES
-#   - vaults/tg/token.txt must exist (run 'just decrypt' if encrypted)
+#   - Both vault files must exist (run 'just decrypt' if encrypted)
 #   - curl and python3 must be available
 #
 # EXIT CODES
 #   0 — message sent successfully
-#   1 — token file missing, empty, or send failure
+#   1 — file missing, empty, or send failure
 #
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 TOKEN_FILE="${ROOT_DIR}/vaults/tg/token.txt"
+ID_FILE="${ROOT_DIR}/vaults/tg/id.txt"
 
-# --- Validate token file ---
-if [ ! -f "$TOKEN_FILE" ]; then
-  echo "Error: token file not found at $TOKEN_FILE" >&2
-  echo "Run 'just decrypt' to reveal secrets first." >&2
-  exit 1
-fi
+# --- Validate files ---
+for f in "$TOKEN_FILE" "$ID_FILE"; do
+  if [ ! -f "$f" ]; then
+    echo "Error: file not found at $f" >&2
+    echo "Run 'just decrypt' to reveal secrets first." >&2
+    exit 1
+  fi
+done
 
-# Read token — format is <chat_id>:<secret_key>
 TOKEN="$(tr -d '[:space:]' < "$TOKEN_FILE")"
+CHAT_ID="$(tr -d '[:space:]' < "$ID_FILE")"
 
 if [ -z "$TOKEN" ]; then
   echo "Error: token file is empty." >&2
   exit 1
 fi
+if [ -z "$CHAT_ID" ]; then
+  echo "Error: id file is empty." >&2
+  exit 1
+fi
 
-# Extract chat_id from the token (the number before the colon)
-CHAT_ID="${TOKEN%%:*}"
 API_URL="https://api.telegram.org/bot${TOKEN}"
 
 # --- Verify bot identity ---
