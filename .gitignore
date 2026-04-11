@@ -14,3 +14,5 @@ themes/ananke/
 .terraform/
 .terraform.lock.hcl
 vaults/tg/id.txt
+vaults/github/account-pat.txt
+vaults/github/repo-class-pat.txt
