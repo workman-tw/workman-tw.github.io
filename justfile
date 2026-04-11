@@ -5,6 +5,7 @@ import './just.d/gitsecret.just'
 import './just.d/vendir.just'
 import './just.d/tg.just'
 import './just.d/gh.just'
+import './just.d/slide.just'
 
 # Default invocation prints the command list
 default:
@@ -18,6 +19,7 @@ help:
 menu:
 	@./scripts/interactive.sh \
 		"Hugo::just hugo" \
+		"Slides::just slide" \
 		"Telegram::just tg" \
 		"Sync dependencies::just sync" \
 		"Encrypt secrets::just encrypt" \
