@@ -40,6 +40,11 @@ theme = 'ananke'
   weight = 4
 
 [[menu.main]]
+  name = '檔案下載'
+  url = '/downloads/'
+  weight = 5
+
+[[menu.main]]
   name = '聯絡我們'
   url = '/contact/'
-  weight = 5
+  weight = 6
