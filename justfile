@@ -3,6 +3,7 @@ set shell := ['/bin/sh', '-cu']
 import './just.d/hugo.just'
 import './just.d/gitsecret.just'
 import './just.d/vendir.just'
+import './just.d/tg.just'
 
 # Default invocation prints the command list
 default:
@@ -16,6 +17,7 @@ help:
 menu:
 	@./scripts/interactive.sh \
 		"Hugo::just hugo" \
+		"Telegram::just tg" \
 		"Sync dependencies::just sync" \
 		"Encrypt secrets::just encrypt" \
 		"Decrypt secrets::just decrypt" \
