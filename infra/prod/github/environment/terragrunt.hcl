@@ -13,6 +13,7 @@ terraform {
 
 locals {
   tg_token_path = "${get_repo_root()}/vaults/tg/token.txt"
+  tg_id_path    = "${get_repo_root()}/vaults/tg/id.txt"
 
   gh_repository_name = "workman-tw.github.io"
   environment        = "prod"
@@ -28,8 +29,13 @@ inputs = {
   action_secrets = [
     {
       secret_name     = "TG_BOT_TOKEN"
-      plaintext_value = trimspace(file(local.tg_token_path))
+      plaintext_value = file(local.tg_token_path)
     }
   ]
-  action_variables = []
+  action_variables = [
+    {
+      variable_name     = "TG_ID"
+      value             = file(local.tg_id_path)
+    },
+  ]
 }
