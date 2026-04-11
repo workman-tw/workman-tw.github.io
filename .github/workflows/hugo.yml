@@ -58,11 +58,31 @@ jobs:
 
   deploy:
     environment:
-      name: github-pages
+      name: prod
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Notify deploy start
+        run: |
+          curl -sf -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\": ${{ vars.TG_ID }}, \"text\": \"🚀 [workman-tw.github.io] Deploy started\nCommit: ${{ github.sha }}\nBy: ${{ github.actor }}\"}"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify deploy success
+        if: success()
+        run: |
+          curl -sf -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\": ${{ vars.TG_ID }}, \"text\": \"✅ [workman-tw.github.io] Deploy succeeded\nURL: ${{ steps.deployment.outputs.page_url }}\"}"
+
+      - name: Notify deploy failure
+        if: failure()
+        run: |
+          curl -sf -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\": ${{ vars.TG_ID }}, \"text\": \"❌ [workman-tw.github.io] Deploy failed\nCommit: ${{ github.sha }}\nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\"}"
