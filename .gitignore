@@ -6,5 +6,10 @@ resources/_gen/
 !*.secret
 skills-lock.json
 vaults/tg/token.txt
+vaults/github/pat.txt
 vendir.lock.yml
 themes/ananke/
+tfstate/
+.terragrunt-cache/
+.terraform/
+.terraform.lock.hcl
