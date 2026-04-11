@@ -1,0 +1,20 @@
+flowchart TB
+  subgraph Source["Source Environment"]
+    SA[App Server]
+    SD[(Database)]
+  end
+  subgraph Migration["Migration Layer"]
+    DMS[Data Migration Service]
+    CT[Container Transform]
+  end
+  subgraph Target["Target Environment"]
+    TA[App Server]
+    TD[(Database)]
+    LB[Load Balancer]
+  end
+  SA -->|Traffic Mirror| LB
+  SD --> DMS
+  DMS --> TD
+  SA --> CT
+  CT --> TA
+  LB --> TA

@@ -1,0 +1,23 @@
+flowchart TB
+  subgraph Client["Clients"]
+    APP[Application]
+    WEB[Web Service]
+  end
+  subgraph Infra["Inference Platform"]
+    GW[API Gateway]
+    subgraph Triton["Triton Cluster"]
+      T1[Triton Pod 1]
+      T2[Triton Pod 2]
+    end
+    subgraph Models["Model Store"]
+      MS[(Model Repository)]
+    end
+    HPA[Auto Scaler]
+  end
+  APP --> GW
+  WEB --> GW
+  GW --> T1
+  GW --> T2
+  MS --> T1
+  MS --> T2
+  HPA -->|Scale| Triton

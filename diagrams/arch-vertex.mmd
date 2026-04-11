@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph Client["Client Layer"]
+    U[User / App]
+  end
+  subgraph GCP["Google Cloud Platform"]
+    subgraph VPC["VPC Network"]
+      LB[Cloud Load Balancer]
+      subgraph Compute["Compute"]
+        EP[Vertex AI Endpoint]
+        WB[Vertex AI Workbench]
+      end
+      subgraph Storage["Storage"]
+        BQ[BigQuery]
+        GCS[Cloud Storage]
+      end
+    end
+    IAM[Cloud IAM]
+  end
+  U --> LB
+  LB --> EP
+  WB --> BQ
+  WB --> GCS
+  BQ --> EP
+  IAM -.->|認證授權| VPC

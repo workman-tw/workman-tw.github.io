@@ -1,0 +1,19 @@
+flowchart TB
+  subgraph Cloud["Cloud"]
+    TR[Training Cluster]
+    REG[Model Registry]
+    DASH[Dashboard]
+  end
+  subgraph Site["Edge Site"]
+    subgraph Device["Edge Device"]
+      RT[Runtime Engine]
+      CAM[Camera / Sensor]
+    end
+    GW[Edge Gateway]
+  end
+  TR --> REG
+  REG -->|OTA Update| GW
+  GW --> RT
+  CAM --> RT
+  RT -->|推論結果| GW
+  GW -->|資料回傳| DASH

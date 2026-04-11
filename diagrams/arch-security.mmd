@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph External["External"]
+    USER[Users]
+    ATK[Threats]
+  end
+  subgraph Perimeter["Security Perimeter"]
+    WAF[WAF / Firewall]
+    IDP[Identity Provider]
+  end
+  subgraph Internal["Internal Network"]
+    subgraph ZeroTrust["Zero Trust Zone"]
+      APP[AI Application]
+      DB[(Encrypted DB)]
+      LOG[Audit Logs]
+    end
+    RBAC[RBAC Policy Engine]
+  end
+  USER --> WAF
+  ATK -->|Blocked| WAF
+  WAF --> IDP
+  IDP --> RBAC
+  RBAC --> APP
+  APP --> DB
+  APP --> LOG

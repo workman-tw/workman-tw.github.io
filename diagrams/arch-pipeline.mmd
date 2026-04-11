@@ -1,0 +1,27 @@
+flowchart TB
+  subgraph Sources["Data Sources"]
+    DB[(Database)]
+    API[REST API]
+    IOT[IoT Devices]
+  end
+  subgraph Cloud["Cloud Data Platform"]
+    subgraph Ingestion["Ingestion Layer"]
+      PS[Pub/Sub / Kinesis]
+    end
+    subgraph Processing["Processing Layer"]
+      DF[Dataflow / Glue]
+    end
+    subgraph Storage["Storage Layer"]
+      DL[(Data Lake)]
+      DW[(Data Warehouse)]
+    end
+    MON[Monitoring & Alerts]
+  end
+  DB --> PS
+  API --> PS
+  IOT --> PS
+  PS --> DF
+  DF --> DL
+  DF --> DW
+  DL --> MON
+  DW --> MON

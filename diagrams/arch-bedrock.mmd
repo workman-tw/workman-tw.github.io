@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph Client["Client Layer"]
+    U[User / App]
+  end
+  subgraph AWS["Amazon Web Services"]
+    APIGW[API Gateway]
+    subgraph Bedrock["Bedrock Service"]
+      FM[Foundation Models]
+      KB[Knowledge Bases]
+      GR[Guardrails]
+    end
+    subgraph Data["Data Layer"]
+      S3[S3 Documents]
+      OS[OpenSearch]
+    end
+    IAM[IAM Roles]
+  end
+  U --> APIGW
+  APIGW --> GR
+  GR --> FM
+  FM --> KB
+  KB --> OS
+  S3 --> KB
+  IAM -.->|認證授權| Bedrock

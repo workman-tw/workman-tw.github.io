@@ -1,0 +1,23 @@
+flowchart TB
+  subgraph Network["Data Center Network"]
+    SW[Core Switch]
+    subgraph Rack["GPU Rack"]
+      G1[GPU Node 1\nA100 x4]
+      G2[GPU Node 2\nH100 x4]
+      NAS[(NAS Storage)]
+    end
+    subgraph Mgmt["Management"]
+      K8S[K8s Master]
+      MON[Monitoring]
+    end
+  end
+  SW --> G1
+  SW --> G2
+  SW --> NAS
+  SW --> K8S
+  K8S -->|GPU Scheduling| G1
+  K8S -->|GPU Scheduling| G2
+  G1 --> NAS
+  G2 --> NAS
+  G1 --> MON
+  G2 --> MON

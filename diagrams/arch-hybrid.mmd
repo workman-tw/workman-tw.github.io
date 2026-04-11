@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph OnPrem["On-Premises"]
+    subgraph DC["Data Center"]
+      DB[(Sensitive Data)]
+      INF[Inference Server]
+    end
+    FW[Firewall]
+  end
+  subgraph Cloud["Public Cloud"]
+    subgraph Train["Training Env"]
+      GPU[GPU Cluster]
+      MR[Model Registry]
+    end
+    LB[Load Balancer]
+  end
+  subgraph Edge["Edge Sites"]
+    ED[Edge Devices]
+  end
+  DB --> FW
+  FW -->|VPN / 專線| GPU
+  GPU --> MR
+  MR -->|模型同步| INF
+  MR -->|OTA| ED
+  LB --> INF

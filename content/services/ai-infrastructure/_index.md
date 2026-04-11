@@ -173,8 +173,22 @@ type: "page"
     <h3>GCP Vertex AI 平台</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">BigQuery 資料準備</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Vertex AI Workbench</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">AutoML / Custom 訓練</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Model Registry</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Endpoint 部署</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-vertex.svg" alt="infra-vertex 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-vertex.svg" alt="arch-vertex 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -196,8 +210,22 @@ type: "page"
     <h3>AWS SageMaker</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">S3 資料儲存</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">SageMaker Studio</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Training Job</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Model Monitor</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Endpoint 推論</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-sagemaker.svg" alt="infra-sagemaker 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-sagemaker.svg" alt="arch-sagemaker 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -219,8 +247,22 @@ type: "page"
     <h3>AWS Bedrock 基礎模型</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">應用程式請求</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Bedrock API Gateway</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Knowledge Bases RAG</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">基礎模型推論</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Guardrails 過濾</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-bedrock.svg" alt="infra-bedrock 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-bedrock.svg" alt="arch-bedrock 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -242,8 +284,22 @@ type: "page"
     <h3>雲端資料管線建置</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">資料來源 DB/API/IoT</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">即時擷取 Pub/Sub</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">ETL 轉換處理</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Data Lake 儲存</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">品質監控 & 告警</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-pipeline.svg" alt="infra-pipeline 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-pipeline.svg" alt="arch-pipeline 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -265,8 +321,22 @@ type: "page"
     <h3>雲端 MLOps 流程</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">程式碼提交</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">CI/CD 觸發</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">自動訓練 & 測試</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">模型註冊 & 審核</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">自動部署 & 監控</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-mlops.svg" alt="infra-mlops 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-mlops.svg" alt="arch-mlops 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -288,8 +358,22 @@ type: "page"
     <h3>混合雲架構設計</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">地端資料中心</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">VPN / 專線連接</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">雲端模型訓練</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">模型同步回地端</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">地端推論服務</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-hybrid.svg" alt="infra-hybrid 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-hybrid.svg" alt="arch-hybrid 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -312,8 +396,22 @@ type: "page"
     <h3>邊緣運算部署</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">雲端模型訓練</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">模型壓縮量化</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">OTA 推送部署</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">邊緣即時推論</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">資料回傳雲端</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-edge.svg" alt="infra-edge 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-edge.svg" alt="arch-edge 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -335,8 +433,22 @@ type: "page"
     <h3>雲地遷移服務</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">工作負載評估</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">遷移方案設計</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">資料與應用遷移</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">驗證 & 調優</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">正式切換上線</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-migrate.svg" alt="infra-migrate 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-migrate.svg" alt="arch-migrate 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -359,8 +471,22 @@ type: "page"
     <h3>GPU 運算環境規劃</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">工作負載分析</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">GPU 選型 & 規格</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">硬體採購部署</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">CUDA 環境建置</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">K8s GPU 排程</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-gpu.svg" alt="infra-gpu 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-gpu.svg" alt="arch-gpu 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -382,8 +508,22 @@ type: "page"
     <h3>地端 AI 推論平台</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">模型匯入</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">格式轉換 TensorRT/ONNX</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">Triton Server</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">API Gateway</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">監控 & 自動擴縮</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-inference.svg" alt="infra-inference 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-inference.svg" alt="arch-inference 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>
@@ -405,8 +545,22 @@ type: "page"
     <h3>資安與隱私保護</h3>
     <div class="dialog-subtitle">技術架構與運作流程</div>
     <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+            <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">威脅評估</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">零信任網路設計</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">RBAC 權限配置</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">加密 & 稽核日誌</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">合規報告產出</div>
+      </div>
+    </div>
+    <div class="dialog-section">
       <h4>系統架構圖</h4>
-      <img src="/images/diagrams/infra-security.svg" alt="infra-security 架構圖" style="width: 100%; border-radius: 8px;">
+      <img src="/images/diagrams/arch-security.svg" alt="arch-security 架構圖" style="width: 100%; border-radius: 8px;">
     </div>
     <div class="dialog-section">
       <h4>常見問題（FAQ）</h4>

@@ -1,0 +1,21 @@
+flowchart TB
+  subgraph Dev["Development"]
+    GIT[Git Repository]
+    NB[Notebook / IDE]
+  end
+  subgraph CICD["CI/CD Pipeline"]
+    BUILD[Build & Test]
+    REG[Model Registry]
+  end
+  subgraph Prod["Production"]
+    STAGE[Staging Endpoint]
+    LIVE[Production Endpoint]
+    MON[Model Monitor]
+  end
+  NB --> GIT
+  GIT -->|Push| BUILD
+  BUILD --> REG
+  REG --> STAGE
+  STAGE -->|Approval| LIVE
+  LIVE --> MON
+  MON -->|Drift Alert| GIT

@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph Client["Client Layer"]
+    U[User / App]
+  end
+  subgraph AWS["Amazon Web Services"]
+    subgraph VPC["VPC"]
+      ALB[Application Load Balancer]
+      subgraph Private["Private Subnet"]
+        EP[SageMaker Endpoint]
+        ST[SageMaker Studio]
+      end
+      subgraph Data["Data Layer"]
+        S3[S3 Bucket]
+        ECR[ECR Registry]
+      end
+    end
+    IAM[IAM Roles]
+  end
+  U --> ALB
+  ALB --> EP
+  ST --> S3
+  ST --> ECR
+  ECR --> EP
+  IAM -.->|認證授權| VPC
