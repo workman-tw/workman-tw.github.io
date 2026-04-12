@@ -126,6 +126,16 @@ type: "page"
     <td>• 無法使用雲端 API 的場景<br>• 醫療 / 金融等資料不出場域<br>• 邊緣裝置推論部署</td>
     </tr>
     <tr>
+    <td><span class="table-dialog-btn" data-dialog="dlg-infra-mlflow">MLflow 實驗管理平台</span><br><span class="badge badge-cyan">MLflow</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">搭建地端 MLflow 實驗追蹤與模型管理平台。</span></td>
+    <td>• MLflow Tracking Server 部署<br>• 實驗參數與指標追蹤<br>• Model Registry 模型版本管理<br>• Artifact Store（S3 / MinIO / NFS）整合<br>• Backend Store（PostgreSQL / MySQL）建置<br>• 與 Jupyter / VS Code 開發環境整合</td>
+    <td>• 需要統一管理 ML 實驗的團隊<br>• 模型版本追蹤與比較需求<br>• 多人協作的 AI 研發環境</td>
+    </tr>
+    <tr>
+    <td><span class="table-dialog-btn" data-dialog="dlg-infra-kubeflow">Kubeflow ML 平台</span><br><span class="badge badge-blue">Kubeflow</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">搭建基於 Kubernetes 的端到端 ML 平台。</span></td>
+    <td>• Kubeflow Pipelines 工作流編排<br>• Katib 超參數自動調優<br>• KServe 模型服務部署<br>• Notebook Server 開發環境<br>• Training Operator 分散式訓練<br>• Kubernetes 叢集整合與資源管理</td>
+    <td>• 需要端到端 ML 平台的企業<br>• 已有 K8s 叢集的技術團隊<br>• 大規模分散式模型訓練需求</td>
+    </tr>
+    <tr>
     <td><span class="table-dialog-btn" data-dialog="dlg-infra-sec">資安與隱私保護</span><br><span class="badge badge-orange">Security</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">從架構層面確保 AI 系統安全。</span></td>
     <td>• 資料加密（傳輸中 / 靜態）<br>• 網路隔離與零信任架構<br>• 角色型存取控制（RBAC）<br>• 稽核日誌與合規報告<br>• 模型安全掃描與對抗性防護<br>• GDPR / ISO 27001 合規輔導</td>
     <td>• 受法規監管的產業<br>• 處理個資或機敏資料<br>• 需要通過資安稽核</td>
@@ -459,6 +469,89 @@ type: "page"
       <div class="faq-item">
         <div class="faq-q">Q：遷移失敗可以回滾嗎？</div>
         <div class="faq-a">A：每個遷移階段都有完整的回滾計畫，確保任何環節出問題都能快速恢復到原始狀態。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MLflow & Kubeflow Dialogs -->
+<div class="card-dialog" id="dlg-infra-mlflow">
+  <div class="card-dialog-content">
+    <button class="card-dialog-close">&times;</button>
+    <h3>MLflow 實驗管理平台</h3>
+    <div class="dialog-subtitle">技術架構與運作流程</div>
+    <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+      <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">實驗程式開發</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">參數與指標記錄</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">模型產出與儲存</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Model Registry 註冊</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">版本比較與上線</div>
+      </div>
+    </div>
+    <div class="dialog-section">
+      <h4>系統架構圖</h4>
+      <img src="/images/diagrams/arch-mlflow.svg" alt="MLflow 架構圖" style="width: 100%; border-radius: 8px;">
+    </div>
+    <div class="dialog-section">
+      <h4>常見問題（FAQ）</h4>
+      <div class="faq-item">
+        <div class="faq-q">Q：MLflow 可以跟現有的 Jupyter 環境整合嗎？</div>
+        <div class="faq-a">A：可以。只需在 Notebook 中加入幾行 MLflow SDK 程式碼，即可自動追蹤實驗參數、指標與模型產出。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：MLflow 與 Kubeflow 有什麼差異？</div>
+        <div class="faq-a">A：MLflow 專注於實驗追蹤與模型管理，輕量易上手；Kubeflow 是完整的 ML 平台，涵蓋訓練、調參、部署等端到端流程。兩者可互補使用。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：Artifact Store 支援哪些儲存後端？</div>
+        <div class="faq-a">A：支援本地檔案系統、NFS、MinIO（S3 相容）、Azure Blob、GCS 等，可依現有環境選擇。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-dialog" id="dlg-infra-kubeflow">
+  <div class="card-dialog-content">
+    <button class="card-dialog-close">&times;</button>
+    <h3>Kubeflow ML 平台</h3>
+    <div class="dialog-subtitle">技術架構與運作流程</div>
+    <div class="dialog-section" style="border-top: none; margin-top: 0; padding-top: 0;">
+      <h4>流程圖</h4>
+      <div class="flow-diagram">
+        <div class="flow-node">Notebook 開發</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Pipeline 編排</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">分散式訓練</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">Katib 超參數調優</div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node">KServe 模型部署</div>
+      </div>
+    </div>
+    <div class="dialog-section">
+      <h4>系統架構圖</h4>
+      <img src="/images/diagrams/arch-kubeflow.svg" alt="Kubeflow 架構圖" style="width: 100%; border-radius: 8px;">
+    </div>
+    <div class="dialog-section">
+      <h4>常見問題（FAQ）</h4>
+      <div class="faq-item">
+        <div class="faq-q">Q：部署 Kubeflow 需要什麼前置條件？</div>
+        <div class="faq-a">A：需要一個 Kubernetes 叢集（建議 v1.25+），至少 3 個 Worker Node，並配置 StorageClass 與 Istio Service Mesh。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：Kubeflow 支援多租戶嗎？</div>
+        <div class="faq-a">A：支援。透過 Kubernetes Namespace 隔離與 Istio RBAC，可實現多團隊獨立使用同一 Kubeflow 平台。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：可以只部署部分元件嗎？</div>
+        <div class="faq-a">A：可以。Kubeflow 採模組化設計，您可以只部署 Pipelines + KServe 而不裝 Katib，依實際需求選擇元件。</div>
       </div>
     </div>
   </div>

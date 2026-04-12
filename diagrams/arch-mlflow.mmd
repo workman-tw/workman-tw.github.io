@@ -1,0 +1,21 @@
+flowchart TB
+  subgraph Clients["Developer Clients"]
+    NB[Jupyter Notebook]
+    VS[VS Code]
+    CLI[MLflow CLI]
+  end
+  subgraph MLflow["MLflow Platform"]
+    TS[Tracking Server]
+    MR[Model Registry]
+  end
+  subgraph Backend["Backend Services"]
+    DB[(PostgreSQL)]
+    AS[(MinIO / NFS\nArtifact Store)]
+  end
+  NB --> TS
+  VS --> TS
+  CLI --> TS
+  TS --> DB
+  TS --> AS
+  MR --> DB
+  MR --> AS

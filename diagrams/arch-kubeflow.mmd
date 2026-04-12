@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph K8s["Kubernetes Cluster"]
+    subgraph KF["Kubeflow Platform"]
+      PL[Pipelines\n工作流編排]
+      NB[Notebook\nServer]
+      KT[Katib\n超參數調優]
+      TO[Training\nOperator]
+      KS[KServe\n模型服務]
+    end
+    subgraph Infra["Infrastructure"]
+      GPU[GPU Nodes]
+      ST[(Persistent Storage)]
+      ISTIO[Istio Service Mesh]
+    end
+  end
+  NB --> PL
+  PL --> TO
+  PL --> KT
+  TO --> GPU
+  KT --> GPU
+  PL --> KS
+  KS --> ISTIO
+  TO --> ST
+  KS --> ST
