@@ -59,10 +59,15 @@ build_slide() {
     fi
   done
 
-  echo "Building: ${name} (${#md_files[@]} files) -> ${output_file}"
+  local html_file="${OUTPUT_DIR}/${name}.html"
+
+  echo "Building: ${name} (${#md_files[@]} files)"
   marp "$tmp_file" --pptx -o "$output_file"
+  echo "  PPTX: ${output_file}"
+  marp "$tmp_file" --html -o "$html_file"
+  echo "  HTML: ${html_file}"
   rm -f "$tmp_file"
-  echo "Done: ${output_file}"
+  echo "Done: ${name}"
 }
 
 if [ "$#" -gt 0 ]; then

@@ -16,15 +16,28 @@ description: "一宇橙 AI 團隊相關文件下載"
 <div style="overflow-x: auto;">
 <table>
 <thead>
-<tr><th>檔案名稱</th><th>說明</th><th>格式</th><th>下載</th></tr>
+<tr><th>檔案名稱</th><th>說明</th><th>格式</th><th>大小</th><th>操作</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>一宇橙 AI 團隊介紹簡報</strong></td>
 <td>團隊簡介、核心服務、合作流程與聯絡方式</td>
 <td>PPTX</td>
-<td><a href="/downloads/intro.pptx" class="cta-btn cta-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">下載</a></td>
+<td>4.2 MB</td>
+<td>
+  <span class="table-dialog-btn" data-dialog="dlg-preview-intro" style="font-size: 0.85rem; margin-right: 0.5rem;">檢視</span>
+  <a href="/downloads/intro.pptx" class="cta-btn cta-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">下載</a>
+</td>
 </tr>
 </tbody>
 </table>
+</div>
+
+<!-- Preview Dialog -->
+<div class="card-dialog" id="dlg-preview-intro">
+  <div class="card-dialog-content" style="max-width: 960px; max-height: 90vh; padding: 1rem;">
+    <button class="card-dialog-close">&times;</button>
+    <h3 style="margin-bottom: 0.5rem;">一宇橙 AI 團隊介紹簡報</h3>
+    <iframe src="/downloads/intro.html" style="width: 100%; height: 75vh; border: 1px solid #e2e8f0; border-radius: 8px;"></iframe>
+  </div>
 </div>
