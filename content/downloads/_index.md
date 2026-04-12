@@ -29,6 +29,15 @@ description: "一宇橙 AI 團隊相關文件下載"
   <span class="cta-btn cta-secondary table-dialog-btn" data-dialog="dlg-preview-intro" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">檢視</span>
 </td>
 </tr>
+<tr>
+<td><strong>AI 模型排名</strong></td>
+<td>Chatbot Arena — 各大 AI 模型即時排名與評比</td>
+<td>Web</td>
+<td>—</td>
+<td>
+  <a href="https://arena.ai/leaderboard" target="_blank" rel="noopener" class="cta-btn cta-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">檢視</a>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
