@@ -995,17 +995,20 @@ footer .tc a {
 
 /* --- Table Dialog Button --- */
 .table-dialog-btn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.table-dialog-btn:not(.cta-btn) {
   display: inline-block;
   color: var(--primary);
   font-weight: 700;
   font-size: 1.05rem;
-  cursor: pointer;
   border-bottom: 2px dashed var(--primary-light);
   padding-bottom: 2px;
-  transition: all 0.2s ease;
 }
 
-.table-dialog-btn:hover {
+.table-dialog-btn:not(.cta-btn):hover {
   color: var(--primary-dark);
   border-bottom-color: var(--primary);
   border-bottom-style: solid;

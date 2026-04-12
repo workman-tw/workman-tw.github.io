@@ -25,8 +25,8 @@ description: "一宇橙 AI 團隊相關文件下載"
 <td>PPTX</td>
 <td>4.2 MB</td>
 <td>
-  <span class="table-dialog-btn" data-dialog="dlg-preview-intro" style="font-size: 0.85rem; margin-right: 0.5rem;">檢視</span>
   <a href="/downloads/intro.pptx" class="cta-btn cta-primary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">下載</a>
+  <span class="cta-btn cta-secondary table-dialog-btn" data-dialog="dlg-preview-intro" style="padding: 0.4rem 1.2rem; font-size: 0.85rem;">檢視</span>
 </td>
 </tr>
 </tbody>
@@ -35,7 +35,7 @@ description: "一宇橙 AI 團隊相關文件下載"
 
 <!-- Preview Dialog -->
 <div class="card-dialog" id="dlg-preview-intro">
-  <div class="card-dialog-content" style="max-width: 960px; max-height: 90vh; padding: 1rem;">
+  <div class="card-dialog-content" style="max-width: 90vw; max-height: 90vh; padding: 1rem;">
     <button class="card-dialog-close">&times;</button>
     <h3 style="margin-bottom: 0.5rem;">一宇橙 AI 團隊介紹簡報</h3>
     <iframe src="/downloads/intro.html" style="width: 100%; height: 75vh; border: 1px solid #e2e8f0; border-radius: 8px;"></iframe>
