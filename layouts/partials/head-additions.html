@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Dialog system — handles any element with data-dialog attribute
+  // Dialog system
   document.querySelectorAll('[data-dialog]').forEach(function(el) {
     el.addEventListener('click', function(e) {
       e.stopPropagation();
@@ -40,8 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Close dialogs on Escape
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
+      // Close lightbox first if open
+      var lb = document.getElementById('img-lightbox');
+      if (lb && lb.classList.contains('active')) {
+        lb.classList.remove('active');
+        return;
+      }
       document.querySelectorAll('.card-dialog.active').forEach(function(d) {
         d.classList.remove('active');
         document.body.style.overflow = '';
@@ -59,6 +66,35 @@ document.addEventListener('DOMContentLoaded', function() {
       var panel = container.querySelector('#' + btn.getAttribute('data-tab'));
       if (panel) panel.classList.add('active');
     });
+  });
+
+  // Image lightbox — click diagram images in dialogs to view fullscreen
+  var lightbox = document.createElement('div');
+  lightbox.id = 'img-lightbox';
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = '<button class="lightbox-close">&times;</button><img src="" alt="">';
+  document.body.appendChild(lightbox);
+
+  var lbImg = lightbox.querySelector('img');
+  var lbClose = lightbox.querySelector('.lightbox-close');
+
+  document.querySelectorAll('.card-dialog-content .dialog-section img').forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lightbox.classList.add('active');
+    });
+  });
+
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox || e.target === lbClose) {
+      lightbox.classList.remove('active');
+    }
+  });
+
+  lbClose.addEventListener('click', function() {
+    lightbox.classList.remove('active');
   });
 });
 </script>
