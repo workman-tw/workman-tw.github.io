@@ -219,7 +219,7 @@ description: "認識一宇橙 AI 團隊的專業成員"
     <button class="card-dialog-close">&times;</button>
     <h3>AI 教育顧問</h3>
     <div class="dialog-subtitle">AI Training Consultant</div>
-    <p>結合技術深度與教學熱忱的培訓專家。擅長將複雜的 AI 概念轉化為易懂的教學內容，已累計為超過 500 位企業人員提供培訓。</p>
+    <p>結合技術深度與教學熱忱的培訓專家。擅長將複雜的 AI 概念轉化為易懂的教學內容。</p>
     <div class="dialog-section">
       <h4>專業領域</h4>
       <ul>

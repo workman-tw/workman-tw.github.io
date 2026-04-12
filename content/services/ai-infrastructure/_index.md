@@ -157,12 +157,12 @@ type: "page"
     <tbody>
     <tr>
     <td><span class="table-dialog-btn" data-dialog="dlg-infra-hybrid">混合雲架構設計</span><br><span class="badge badge-purple">Hybrid Cloud</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">設計雲端與地端最佳混合部署架構。</span></td>
-    <td>• 敏感資料地端處理、模型雲端訓練架構<br>• GCP Anthos / AWS Outposts 混合雲部署<br>• 跨雲資料同步與安全傳輸<br>• 統一管理面板與監控<br>• 災難復原與備援機制<br>• 成本分攤與資源調度策略</td>
+    <td>• 敏感資料地端處理、模型雲端訓練架構<br>• Google Distributed Cloud 混合雲部署<br>• 跨雲資料同步與安全傳輸<br>• 統一管理面板與監控<br>• 災難復原與備援機制<br>• 成本分攤與資源調度策略</td>
     <td>• 有資料主權合規需求的企業<br>• 需要兼顧雲端彈性與地端安全<br>• 多雲策略規劃</td>
     </tr>
     <tr>
     <td><span class="table-dialog-btn" data-dialog="dlg-infra-edge">邊緣運算部署</span><br><span class="badge badge-green">Edge AI</span><br><span style="color: var(--text-mid); font-size: 0.9rem;">在邊緣裝置上進行 AI 推論。</span></td>
-    <td>• NVIDIA Jetson / Intel OpenVINO 部署<br>• 模型壓縮與量化（INT8 / FP16）<br>• 邊緣裝置遠端管理與 OTA 更新<br>• 離線推論與斷線恢復機制<br>• 邊緣與雲端資料同步策略<br>• 邊緣叢集管理（K3s / MicroK8s）</td>
+    <td>• NVIDIA Jetson / Intel OpenVINO 部署<br>• 邊緣裝置遠端管理與 OTA 更新<br>• 離線推論與斷線恢復機制<br>• 邊緣與雲端資料同步策略<br>• 邊緣叢集管理（K3s / MicroK8s）</td>
     <td>• 工廠即時品檢（無法依賴雲端）<br>• 門市 / 零售現場 AI 分析<br>• IoT 場域即時推論</td>
     </tr>
     <tr>
@@ -409,8 +409,6 @@ type: "page"
             <h4>流程圖</h4>
       <div class="flow-diagram">
         <div class="flow-node">雲端模型訓練</div>
-        <div class="flow-arrow"></div>
-        <div class="flow-node accent">模型壓縮量化</div>
         <div class="flow-arrow"></div>
         <div class="flow-node">OTA 推送部署</div>
         <div class="flow-arrow"></div>

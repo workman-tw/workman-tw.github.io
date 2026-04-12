@@ -42,7 +42,7 @@
 
 ### 混合雲架構
 - 敏感資料地端、模型雲端訓練
-- GCP Anthos / AWS Outposts
+- Google Distributed Cloud
 - VPN / 專線安全傳輸
 - 統一管理面板
 
@@ -51,7 +51,6 @@
 
 ### 邊緣運算 & 遷移
 - NVIDIA Jetson 邊緣部署
-- 模型壓縮量化（INT8 / FP16）
 - OTA 遠端模型更新
 - 漸進式雲地遷移服務
 
