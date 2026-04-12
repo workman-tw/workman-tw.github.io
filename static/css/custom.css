@@ -905,6 +905,14 @@ footer .tc a {
   margin: 0 0 0.75rem 0;
 }
 
+.card-dialog-content .dialog-section img {
+  max-height: 320px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Clickable card indicator */
 .service-card[data-dialog] {
   cursor: pointer;
